@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRScene.unity
+    path: Assets/Scenes/PirateScene.unity
+    guid: a7512a3c7dd80f744803f62060ae9e6f
+  - enabled: 0
+    path: Assets/Scenes/VRScene.unity
     guid: c43bc12308614ad448abc56ed60df084
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
