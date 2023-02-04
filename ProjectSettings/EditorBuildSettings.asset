@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PirateScene.unity
     guid: a7512a3c7dd80f744803f62060ae9e6f
   - enabled: 0
     path: Assets/Scenes/VRScene.unity
     guid: c43bc12308614ad448abc56ed60df084
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/_WorkFolders/Helen/HelenWork.unity
+    guid: a2ca6436d325c844193e3977dd327cfb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fc78a9cd478eb04cab8491381b4b902, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 04852297b1875344f8d536882ee4053f, type: 2}
