@@ -5,7 +5,6 @@ using UnityEngine;
 public class SpeedLeverController : MonoBehaviour
 {
     HingeJoint hinge;
-    public float lastFramesAngle;
     public GameObject boat;
 
     // Start is called before the first frame update
@@ -17,11 +16,10 @@ public class SpeedLeverController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float differenceInAngle = hinge.angle - lastFramesAngle;
+        // find fraction of allowed rotation that the player has used
+        float angleFraction = hinge.angle / hinge.limits.max;
 
-        if(differenceInAngle > 5)
-        {
-            boat.transform.Translate(.1f, 0, 0);
-        }
+        // move boat forward an amount based on player rotation input
+        boat.transform.Translate(angleFraction / 100, 0, 0);
     }
 }

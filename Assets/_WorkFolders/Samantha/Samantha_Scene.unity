@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 466688572}
   - component: {fileID: 466688578}
   m_Layer: 0
-  m_Name: Base
+  m_Name: LeverHinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,7 +757,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 624cabce7c0d6014d80e0abcb3a003f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -799,7 +799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af79018985a5a04ca4164e40d939bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leverAngle: 0
   boat: {fileID: 1331471055}
 --- !u!1 &584082539
 GameObject:
@@ -1321,7 +1320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812440144}
   m_Layer: 0
-  m_Name: Display
+  m_Name: MiniBoatDisplayContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1548,7 +1547,7 @@ GameObject:
   - component: {fileID: 1080448497}
   - component: {fileID: 1080448496}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1629,7 +1628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1147670973
 GameObject:
@@ -1992,7 +1991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230272183}
   m_Layer: 0
-  m_Name: WheelContainer01
+  m_Name: SteeringWheelContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2012,7 +2011,7 @@ Transform:
   - {fileID: 288940843}
   - {fileID: 1324762647}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1266699251
 PrefabInstance:
@@ -2068,6 +2067,10 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_Name
       value: XR Device Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -2739,7 +2742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331471055}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 321810838}
@@ -2757,7 +2760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1340179265}
   m_Layer: 0
-  m_Name: LeverContainer
+  m_Name: SpeedLeverContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
