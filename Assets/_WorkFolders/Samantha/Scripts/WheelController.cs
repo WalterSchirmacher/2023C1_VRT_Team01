@@ -10,15 +10,12 @@ public class WheelController : MonoBehaviour
     public GameObject boat;
     JointSpring spring;     // might use later
 
-    // Start is called before the first frame update
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
         spring = hinge.spring;    // might use later
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         // find how much the wheel has rotated since last frame
