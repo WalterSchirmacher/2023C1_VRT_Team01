@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/_WorkFolders/Walter/Scenes/Walters_Work_Scene.unity
     guid: c55916e8cbfbe514e91f454e14ad17b1
-  - enabled: 1
+  - enabled: 0
     path: Assets/_WorkFolders/Samantha/Samantha_Scene.unity
     guid: 7d5429d63a49bbe4f806c9cfe54658b8
   m_configObjects:
