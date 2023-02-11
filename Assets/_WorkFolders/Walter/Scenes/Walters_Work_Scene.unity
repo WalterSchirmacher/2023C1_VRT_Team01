@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 173772361}
   - component: {fileID: 173772360}
   - component: {fileID: 173772362}
-  - component: {fileID: 173772363}
   m_Layer: 2
   m_Name: ActivateStationLever
   m_TagString: Untagged
@@ -401,28 +400,6 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &173772363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173772355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c67ac09fb5f4804d8bd3e4cbf10eba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  angleBetweenThreshold: 1
-  hingeJointState: 2
-  OnMinLimitReached:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMaxLimitReached:
-    m_PersistentCalls:
-      m_Calls: []
-  leverName: {fileID: 0}
-  nextObj: {fileID: 0}
 --- !u!1 &248808011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1369,6 @@ GameObject:
   - component: {fileID: 649466952}
   - component: {fileID: 649466951}
   - component: {fileID: 649466950}
-  - component: {fileID: 649466954}
   m_Layer: 0
   m_Name: Canon Station
   m_TagString: Untagged
@@ -1477,18 +1453,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &649466954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649466949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c81951796c6d0eb49b810e3c0d8542e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1085186662
 GameObject:
   m_ObjectHideFlags: 0
