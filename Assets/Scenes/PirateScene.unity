@@ -2630,7 +2630,7 @@ HingeJoint:
   m_Anchor: {x: 0.04, y: -0.98, z: -0.07}
   m_Axis: {x: 0, y: 0, z: -2}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.90663385, y: 4.3762646, z: -3.0462737}
+  m_ConnectedAnchor: {x: 2.4749856, y: 2.9676616, z: -3.9049358}
   m_UseSpring: 1
   m_Spring:
     spring: 0
@@ -2673,7 +2673,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 1
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
