@@ -6,7 +6,8 @@ using UnityEngine;
 public class IonCanonBase : MonoBehaviour
 {
 
-    public TextMeshPro TextMeshObj;
+    public TextMeshPro textMeshObj;
+    public AudioSource activationMusic;
     public string defaultText;
     public string activateText;
 
@@ -19,11 +20,12 @@ public class IonCanonBase : MonoBehaviour
     public void PowerOn()
     {
         ChangeText(activateText);
+        activationMusic.Play();
     }
 
     private void ChangeText(string theText)
     {
          Debug.Log("Changing canon text");
-        TextMeshObj.SetText(theText);
+        textMeshObj.SetText(theText);
     }
 }
