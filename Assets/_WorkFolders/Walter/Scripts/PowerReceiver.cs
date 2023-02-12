@@ -5,36 +5,36 @@ using UnityEngine;
 
 public class PowerReceiver : MonoBehaviour
 {
-    public TextMeshPro txtInfo;
+    public TextMeshPro TextMeshObj;
     public static int ionPower = 0;
     public string[] ionPowerPercent = new string[] {"0%", "33%", "66%", "100%"};
     public string defaultText = "Power Level: ";
 
-    public void Awake()
+    public void Start()
     {
-      //  txtInfo = this.transform.GetComponentInParent<TextMeshPro>();
-        ChangePowerText(defaultText + ionPowerPercent[ionPower]);
+        //  txtInfo = this.transform.GetComponentInParent<TextMeshPro>();
+        ChangeText(defaultText + ionPowerPercent[ionPower]);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-         Debug.Log(other.gameObject.name);
+     //    Debug.Log(other.gameObject.name);
         // Hide PowerPellet
         other.gameObject.SetActive(false);
-        Debug.Log(ionPower);
+     //   Debug.Log(ionPower);
         if(ionPower < 3)
         {
             // Increase ionPower variable by 1
-            Debug.Log("Increasing Power");
+        //    Debug.Log("Increasing Power");
             ionPower++;
-            ChangePowerText(defaultText + ionPowerPercent[ionPower]);
+            ChangeText(defaultText + ionPowerPercent[ionPower]);
         }
 
     }
 
-    private void ChangePowerText(string theText)
+    private void ChangeText(string theText)
     {
-        Debug.Log("Chaning text");
-        txtInfo.SetText(theText);
+      //  Debug.Log("Changing text");
+        TextMeshObj.SetText(theText);
     }
 }

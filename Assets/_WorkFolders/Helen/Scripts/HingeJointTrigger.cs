@@ -25,6 +25,8 @@ public class HingeJointTrigger : MonoBehaviour
         float angleWithMinLimit = Mathf.Abs(hinge.angle - hinge.limits.min);
         float angleWithMaxLimit = Mathf.Abs(hinge.angle - hinge.limits.max);
 
+ 
+
         if (angleWithMinLimit < angleBetweenThreshold)
         {
             if (hingeJointState != HingeJointState.Min)
