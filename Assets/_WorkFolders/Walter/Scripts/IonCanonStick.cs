@@ -16,29 +16,29 @@ public class IonCanonStick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        initialAngles = this.transform.rotation.eulerAngles;
-        Debug.Log("inital angles are " + initialAngles.x + ", " + initialAngles.y + " " + initialAngles.z);
+    //    initialAngles = this.transform.rotation.eulerAngles;
+     //   Debug.Log("inital angles are " + initialAngles.x + ", " + initialAngles.y + " " + initialAngles.z);
 
-        intX = (int)Math.Round(initialAngles.x);
-        intZ = (int)Math.Round(initialAngles.z);
-        Debug.Log("intX is: " + intX + " and intZ: " + intZ);
+    //    intX = (int)Math.Round(initialAngles.x);
+     //   intZ = (int)Math.Round(initialAngles.z);
+     //   Debug.Log("intX is: " + intX + " and intZ: " + intZ);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 currentAngles = this.transform.rotation.eulerAngles;
-        Debug.Log("current angles are " + currentAngles.x + ", " + currentAngles.y + " " + currentAngles.z);
-        int newX = (int)Math.Round(currentAngles.x);
-        int newZ = (int)Math.Round(currentAngles.z);
-        Enum theDir = GetDirection(new Point(intX, intZ), new Point(newX, newZ));
-        Debug.Log("newX is: " + newX + " and newZ: " + newZ);
-        Debug.Log("Current Direction is: " + theDir.ToString());
-        int dirNum = theDir.GetHashCode();
+     //   Vector3 currentAngles = this.transform.rotation.eulerAngles;
+      //  Debug.Log("current angles are " + currentAngles.x + ", " + currentAngles.y + " " + currentAngles.z);
+     //   int newX = (int)Math.Round(currentAngles.x);
+      //  int newZ = (int)Math.Round(currentAngles.z);
+       // Enum theDir = GetDirection(new Point(intX, intZ), new Point(newX, newZ));
+     //   Debug.Log("newX is: " + newX + " and newZ: " + newZ);
+    //    Debug.Log("Current Direction is: " + theDir.ToString());
+    //    int dirNum = theDir.GetHashCode();
      //   targetLine.transform.eulerAngles = new Vector3(dirNum, targetLine.transform.eulerAngles.y, targetLine.transform.eulerAngles.z);
     }
 
-    Enum GetDirection(Point start, Point end)
+   /* Enum GetDirection(Point start, Point end)
     {
 
         double dx = end.X - start.X;
@@ -115,5 +115,6 @@ public class IonCanonStick : MonoBehaviour
             }
         }
         return val;
-    }
+    } */
+
 }
