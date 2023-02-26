@@ -8,6 +8,7 @@ public class IonTargeting : MonoBehaviour
 {
     public enum MoveDirection { ForwardBack, LeftRight };
     public MoveDirection direction;
+    public IonCanonFire Cannon;
     public GameObject targetObject, backBlock, forwardBlock, leftBlock, rightBlock;
     public AudioSource audioSource;
     HingeJoint hinge;
@@ -28,6 +29,7 @@ public class IonTargeting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        targetObject.SetActive(false);
         hinge = GetComponent<HingeJoint>();
         minValue = hinge.limits.min;
         maxValue = hinge.limits.max;
@@ -55,11 +57,17 @@ public class IonTargeting : MonoBehaviour
     public void StartMoving()
     {
         moveObj = true;
+        Cannon.MakeTransparent();
+        if(!targetObject.activeInHierarchy)
+        {
+            targetObject.SetActive(true);
+        }
     }
 
     public void StopMoving()
     {
         moveObj = false;
+        Cannon.MakeVisible();
     }
 
     private void UpdatePosForwardBack()

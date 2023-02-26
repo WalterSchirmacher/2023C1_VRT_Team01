@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PirateScene.unity
     guid: a7512a3c7dd80f744803f62060ae9e6f
   - enabled: 0
     path: 
-    guid: c43bc12308614ad448abc56ed60df084
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
