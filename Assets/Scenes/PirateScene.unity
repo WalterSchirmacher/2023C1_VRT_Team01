@@ -13359,7 +13359,7 @@ GameObject:
   - component: {fileID: 649521427}
   - component: {fileID: 648021631}
   - component: {fileID: 652269905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'console '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
