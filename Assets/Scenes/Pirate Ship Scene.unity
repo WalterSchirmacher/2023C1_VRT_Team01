@@ -12895,10 +12895,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8326531693796008446, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531693859790914, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531693992017230, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531694227742405, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531694295298558, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8326531694557925302, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: oceanScenery
       value: 
       objectReference: {fileID: 1137008613}
+    - target: {fileID: 8326531694557925303, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8326531694557925305, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 2.77
@@ -12957,6 +12981,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8326531694672336487, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531694731883101, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531695156352585, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531695207155569, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13446,7 +13482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -30288,6 +30324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AcceleratorContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 1388094246574916551, guid: 3e6bf95de2ae58549abf9bee238ccc98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e6bf95de2ae58549abf9bee238ccc98, type: 3}
 --- !u!1 &1946200569
@@ -30433,7 +30473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1955567715
 AudioSource:
   m_ObjectHideFlags: 0
