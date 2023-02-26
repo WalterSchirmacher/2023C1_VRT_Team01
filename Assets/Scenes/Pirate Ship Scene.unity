@@ -12987,6 +12987,14 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8326531695156352581, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.348
+      objectReference: {fileID: 0}
+    - target: {fileID: 8326531695156352581, guid: 998b49e27f82d464fa14224dde161779, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.031
+      objectReference: {fileID: 0}
     - target: {fileID: 8326531695156352585, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: m_IsTrigger
       value: 0
