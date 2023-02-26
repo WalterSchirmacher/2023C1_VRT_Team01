@@ -9,20 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/PirateScene.unity
     guid: a7512a3c7dd80f744803f62060ae9e6f
   - enabled: 0
-    path: Assets/Scenes/VRScene.unity
-    guid: c43bc12308614ad448abc56ed60df084
-  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/_WorkFolders/Walter/Scenes/Walters_Work_Scene.unity
     guid: c55916e8cbfbe514e91f454e14ad17b1
   - enabled: 0
     path: Assets/_WorkFolders/Samantha/Samantha_Scene.unity
     guid: 7d5429d63a49bbe4f806c9cfe54658b8
+  - enabled: 1
+    path: Assets/_WorkFolders/Walter/Scenes/Walter_Pirate_Ship_Work.unity
+    guid: e26447ac18d584340b325ddb4ca2c3d6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fc78a9cd478eb04cab8491381b4b902, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 04852297b1875344f8d536882ee4053f, type: 2}

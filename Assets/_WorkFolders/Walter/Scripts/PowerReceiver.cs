@@ -7,11 +7,13 @@ public class PowerReceiver : MonoBehaviour
 {
 
     public TextMeshPro TextMeshObj;
+    public Light lightSource;
+    public IonCanonFire cannon;
     public static int ionPower = 0;
     public string[] ionPowerPercent = new string[] {"0%", "33%", "66%", "100%"};
     public string defaultText = "Power Level: ";
     public AudioSource powerIncreaseSound;
-    public AudioSource finalPowerSound;
+    public string batteryTag = "Battery";
     private bool musicOn = false;
 
     public void Start()
@@ -22,19 +24,33 @@ public class PowerReceiver : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-     //    Debug.Log(other.gameObject.name);
-        // Hide PowerPellet
-        other.gameObject.SetActive(false);
-     //   Debug.Log(ionPower);
-        if(ionPower < 3)
+        if(other.gameObject.tag == batteryTag)
         {
-            // Increase ionPower variable by 1
-        //    Debug.Log("Increasing Power");
-            ionPower++;
-            ChangeText(defaultText + ionPowerPercent[ionPower]);
-            ChangeSoundFx();
-        }
+            other.gameObject.SetActive(false);
+            if (ionPower < 3)
+            {
+                // Increase ionPower variable by 1
+                ionPower++;
+                ChangeText(defaultText + ionPowerPercent[ionPower]);
+                ChangeSoundFx();
 
+                float perNum = float.Parse(ionPowerPercent[ionPower].Replace("%", ""));
+                int perINum = (int)perNum;
+                if(perINum > 0 && perINum <= 100)
+                {
+                    lightSource.intensity = perNum;
+                } else
+                {
+                    Debug.Log("Error in number entry. Value is: " + ionPowerPercent[ionPower]);
+                    Debug.Log("This value convereted to: " + perINum);
+                }
+            }
+
+            if (ionPower == 3)
+            {
+                cannon.StartUpCannon();
+            }
+        }
     }
 
     private void ChangeText(string theText)
@@ -59,5 +75,4 @@ public class PowerReceiver : MonoBehaviour
         Debug.Log("pitch is now: " + pitchLevel);
         powerIncreaseSound.pitch = pitchLevel;
     }
-
 }
