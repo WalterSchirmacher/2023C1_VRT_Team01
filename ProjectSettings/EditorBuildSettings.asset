@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/_WorkFolders/Walter/Scenes/Walter_Pirate_Ship_Work.unity
     guid: e26447ac18d584340b325ddb4ca2c3d6
   - enabled: 1
-    path: Assets/Scenes/Pirate Ship Scene.unity
+    path: Assets/_WorkFolders/Daryll/Pirate Ship Scene.unity
     guid: 11d96603a97bbf64e8331e729a19fe12
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fc78a9cd478eb04cab8491381b4b902, type: 2}
