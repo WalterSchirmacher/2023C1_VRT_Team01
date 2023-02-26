@@ -24,7 +24,8 @@ public class PowerReceiver : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == batteryTag)
+        Debug.Log("I see a " + other.name + " " + other.tag);
+        if(other.gameObject.CompareTag(batteryTag))
         {
             other.gameObject.SetActive(false);
             if (ionPower < 3)
