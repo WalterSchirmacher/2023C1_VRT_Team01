@@ -1461,7 +1461,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4517433871830767975, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 100.00006
+      value: 104.06461
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872855314190, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_Name
@@ -40681,7 +40681,7 @@ SphereCollider:
   m_GameObject: {fileID: 1905877120}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
