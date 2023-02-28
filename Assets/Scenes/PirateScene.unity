@@ -1461,7 +1461,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4517433871830767975, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 104.06461
+      value: 100.00092
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872855314190, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_Name
@@ -10891,8 +10891,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 48.16568, y: 7.48049, z: 35.644108}
-  m_Center: {x: 0.000016212463, y: 0.00000035762784, z: 0.0000009536744}
+  m_Size: {x: 48.16568, y: 7.48049, z: 37.35932}
+  m_Center: {x: 0.000016988966, y: 0.00000042472416, z: 0.8576158}
 --- !u!54 &409384533
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24296,7 +24296,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6431ffed876bd214ea8a3392ae27cc03, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -39462,8 +39462,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.545504, y: 8.942304, z: 35.75984}
-  m_Center: {x: 0, y: 0.00000023841856, z: 0.0000009536744}
+  m_Size: {x: 20.545504, y: 8.942303, z: 37.09949}
+  m_Center: {x: -7.314335e-15, y: 0.00000042472416, z: 0.66983336}
 --- !u!153 &1777660549
 ConfigurableJoint:
   m_ObjectHideFlags: 0
