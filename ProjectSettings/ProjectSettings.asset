@@ -731,6 +731,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    1: NORMCORE
     7: NORMCORE
   additionalCompilerArguments: {}
   platformArchitecture: {}

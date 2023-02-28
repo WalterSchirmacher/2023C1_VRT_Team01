@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03997338, g: 0.03997338, b: 0.039632637, a: 1}
+  m_IndirectSpecularColor: {r: 0.04011709, g: 0.04011709, b: 0.039774194, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12335,7 +12335,7 @@ GameObject:
   - component: {fileID: 515561745}
   - component: {fileID: 515561744}
   - component: {fileID: 515561743}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (8)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -13017,6 +13017,9 @@ GameObject:
   - component: {fileID: 595218499}
   - component: {fileID: 595218498}
   - component: {fileID: 595218497}
+  - component: {fileID: 595218500}
+  - component: {fileID: 595218501}
+  - component: {fileID: 595218502}
   m_Layer: 0
   m_Name: Right Door
   m_TagString: Untagged
@@ -13032,12 +13035,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595218495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.998, y: 0, z: 0.249}
+  m_LocalPosition: {x: 0.99800014, y: 0, z: 0.24900001}
   m_LocalScale: {x: 0.025, y: 1, z: 0.511875}
   m_Children:
   - {fileID: 969205208}
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &595218497
 BoxCollider:
@@ -13102,6 +13105,184 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595218495}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &595218500
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595218495}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &595218501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595218495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1332027867}
+  m_Colliders:
+  - {fileID: 969205209}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 0
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 0
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+--- !u!59 &595218502
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595218495}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: -2.3, y: 0, z: 0.5}
+  m_Axis: {x: -0.1, y: 42.33, z: 1.14}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -3.1592624, y: 3.733, z: -0.6080625}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -102.275604
+    max: -11.783868
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &599342896
 GameObject:
   m_ObjectHideFlags: 0
@@ -13432,7 +13613,7 @@ GameObject:
   - component: {fileID: 633710546}
   - component: {fileID: 633710545}
   - component: {fileID: 633710544}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (4)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -15060,7 +15241,7 @@ GameObject:
   - component: {fileID: 780458308}
   - component: {fileID: 780458307}
   - component: {fileID: 780458306}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (6)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -15564,7 +15745,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &821173773
 BoxCollider:
@@ -16055,7 +16236,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &856158201
 BoxCollider:
@@ -21858,8 +22039,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 969205207}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1332216, y: -0.009, z: -0.3399269}
-  m_LocalScale: {x: 6.909754, y: 0.08205332, z: 0.16029954}
+  m_LocalPosition: {x: 2.1332216, y: -0.009000063, z: -0.33992687}
+  m_LocalScale: {x: 6.9097548, y: 0.08205332, z: 0.16029954}
   m_Children: []
   m_Father: {fileID: 595218496}
   m_RootOrder: 0
@@ -22574,7 +22755,7 @@ GameObject:
   - component: {fileID: 1000006645}
   - component: {fileID: 1000006644}
   - component: {fileID: 1000006643}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (5)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -29226,7 +29407,7 @@ GameObject:
   - component: {fileID: 1141536448}
   - component: {fileID: 1141536447}
   - component: {fileID: 1141536446}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (3)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -29955,7 +30136,7 @@ GameObject:
   - component: {fileID: 1171240353}
   - component: {fileID: 1171240352}
   - component: {fileID: 1171240351}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (7)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -30404,6 +30585,9 @@ GameObject:
   - component: {fileID: 1211726164}
   - component: {fileID: 1211726163}
   - component: {fileID: 1211726162}
+  - component: {fileID: 1211726167}
+  - component: {fileID: 1211726166}
+  - component: {fileID: 1211726165}
   m_Layer: 0
   m_Name: Left Door
   m_TagString: Untagged
@@ -30424,7 +30608,7 @@ Transform:
   m_Children:
   - {fileID: 1836354324}
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1211726162
 BoxCollider:
@@ -30489,6 +30673,184 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211726160}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!59 &1211726165
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211726160}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: -2.3, y: 0, z: -0.51}
+  m_Axis: {x: -0.1, y: 42.33, z: 1.14}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -3.1592624, y: 3.733, z: -1.6400564}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 16.58627
+    max: 83.89074
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!114 &1211726166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211726160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 1332027867}
+  m_Colliders:
+  - {fileID: 1836354325}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 0
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 0
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+--- !u!54 &1211726167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211726160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1216144942
 GameObject:
   m_ObjectHideFlags: 0
@@ -30615,7 +30977,7 @@ GameObject:
   - component: {fileID: 1250267178}
   - component: {fileID: 1250267177}
   - component: {fileID: 1250267176}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -32641,7 +33003,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1345700591
 BoxCollider:
@@ -34210,7 +34572,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1459623293
 BoxCollider:
@@ -34360,7 +34722,7 @@ GameObject:
   - component: {fileID: 1534530842}
   - component: {fileID: 1534530841}
   - component: {fileID: 1534530840}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (1)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -37769,13 +38131,13 @@ Transform:
   m_LocalPosition: {x: -3.606, y: 3.733, z: -1.113}
   m_LocalScale: {x: 0.475, y: 1, z: 1}
   m_Children:
+  - {fileID: 595218496}
   - {fileID: 1459623292}
   - {fileID: 856158200}
   - {fileID: 821173772}
   - {fileID: 1345700590}
   - {fileID: 1933157792}
   - {fileID: 1211726161}
-  - {fileID: 595218496}
   m_Father: {fileID: 0}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38535,7 +38897,7 @@ Transform:
   m_LocalScale: {x: 0.025, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828969307}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &1933157793
 BoxCollider:
@@ -39375,7 +39737,7 @@ GameObject:
   - component: {fileID: 2028043600}
   - component: {fileID: 2028043599}
   - component: {fileID: 2028043598}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Food Pellet (2)
   m_TagString: Food Pellet
   m_Icon: {fileID: 0}
@@ -48337,7 +48699,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4
+    m_Bits: 2
   m_AttachTransform: {fileID: 1127335633980842986}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
