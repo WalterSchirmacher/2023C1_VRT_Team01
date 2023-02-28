@@ -1461,7 +1461,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4517433871830767975, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 100.00004
+      value: 100.00006
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872855314190, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_Name
@@ -40670,7 +40670,7 @@ Transform:
   m_LocalScale: {x: 0.15102549, y: 0.15102549, z: 0.15102549}
   m_Children: []
   m_Father: {fileID: 851767735165208325}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1905877122
 SphereCollider:
@@ -48553,7 +48553,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 851767735165208325}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &212340399323523133
 SpriteRenderer:
@@ -49090,9 +49090,9 @@ Transform:
   m_LocalPosition: {x: 1.068, y: 2.3266, z: -9.818015}
   m_LocalScale: {x: 0.23959352, y: 0.23959352, z: 0.23959352}
   m_Children:
+  - {fileID: 6248624373269957693}
   - {fileID: 185860988175332544}
   - {fileID: 1905877121}
-  - {fileID: 6248624373269957693}
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 7.733, y: 0, z: 0}
@@ -51799,8 +51799,8 @@ GameObject:
   - component: {fileID: 5723415076873920431}
   - component: {fileID: 5723415076873920430}
   - component: {fileID: 5723415076873920428}
-  - component: {fileID: 5723415076873920429}
   - component: {fileID: 5723415076873920432}
+  - component: {fileID: 5723415076873920429}
   m_Layer: 0
   m_Name: Lever_Top
   m_TagString: Untagged
@@ -51861,10 +51861,10 @@ HingeJoint:
   m_GameObject: {fileID: 5723415076873920427}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0.002}
-  m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 0
-  m_ConnectedAnchor: {x: 1.068, y: 2.3809137, z: -9.821556}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 1.068, y: 2.2914345, z: -9.795376}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -51877,8 +51877,8 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: 136.30058
-    max: 278.5686
+    min: -25.177082
+    max: 63.161846
     bounciness: 0
     bounceMinVelocity: 0.2
     contactDistance: 0
@@ -52009,7 +52009,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
@@ -52321,10 +52321,10 @@ Transform:
   m_GameObject: {fileID: 5723415076873920427}
   m_LocalRotation: {x: -0.8388683, y: -0.0000000059742025, z: -0.0000000044050394, w: 0.5443345}
   m_LocalPosition: {x: 0, y: -0.13272263, z: 0.11338017}
-  m_LocalScale: {x: 100, y: 132.21, z: 194.55997}
+  m_LocalScale: {x: 100, y: 132.21002, z: 194.55997}
   m_Children: []
   m_Father: {fileID: 851767735165208325}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -114.042, y: 0, z: 0}
 --- !u!23 &6252281979053199415
 MeshRenderer:
