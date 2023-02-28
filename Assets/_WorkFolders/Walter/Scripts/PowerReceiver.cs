@@ -9,6 +9,7 @@ public class PowerReceiver : MonoBehaviour
     public TextMeshPro TextMeshObj;
     public Light lightSource;
     public IonCanonFire cannon;
+    public GameObject pushButton;
     public static int ionPower = 0;
     public string[] ionPowerPercent = new string[] {"0%", "33%", "66%", "100%"};
     public string defaultText = "Power Level: ";
@@ -18,7 +19,14 @@ public class PowerReceiver : MonoBehaviour
 
     public void Start()
     {
-        //  txtInfo = this.transform.GetComponentInParent<TextMeshPro>();
+       if(pushButton)
+        {
+            pushButton.SetActive(false);
+        }
+       else
+        {
+            Debug.Log("Push Button Not Defined!");
+        }
         ChangeText(defaultText + ionPowerPercent[ionPower]);
     }
 

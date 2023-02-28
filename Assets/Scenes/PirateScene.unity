@@ -12699,6 +12699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 1
   Cannon: {fileID: 663539775}
+  powerReceiver: {fileID: 1949832201}
   targetObject: {fileID: 546136496}
   backBlock: {fileID: 1343560834}
   forwardBlock: {fileID: 1082768508}
@@ -13674,7 +13675,7 @@ GameObject:
   - component: {fileID: 546136497}
   m_Layer: 8
   m_Name: CanonTarget
-  m_TagString: Untagged
+  m_TagString: CannonTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17349,9 +17350,10 @@ GameObject:
   - component: {fileID: 857838913}
   - component: {fileID: 857838912}
   - component: {fileID: 857838911}
+  - component: {fileID: 857838915}
   m_Layer: 0
   m_Name: Ship Collider
-  m_TagString: Untagged
+  m_TagString: EnemyShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17448,6 +17450,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857838909}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &857838915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857838909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7aeccfe827ba884e9d8d5acd2259186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHit: 0
 --- !u!1 &875011789
 GameObject:
   m_ObjectHideFlags: 0
@@ -37944,6 +37959,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642780462}
   m_Mesh: {fileID: 4300002, guid: 44cf6c0fc05c5433f88a685d1de9c913, type: 3}
+--- !u!1 &1643353675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5442110700957807282, guid: 1b194225153ad674ea67b143ac364500, type: 3}
+  m_PrefabInstance: {fileID: 975252533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1643353676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643353675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730fe211b9f9add49ba3d04d096a125e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 0}
+  theEnemy: {fileID: 0}
 --- !u!1 &1654132198
 GameObject:
   m_ObjectHideFlags: 0
@@ -39120,6 +39154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   Cannon: {fileID: 663539775}
+  powerReceiver: {fileID: 1949832201}
   targetObject: {fileID: 546136496}
   backBlock: {fileID: 1343560834}
   forwardBlock: {fileID: 1082768508}
@@ -41112,6 +41147,7 @@ MonoBehaviour:
   TextMeshObj: {fileID: 501025610}
   lightSource: {fileID: 772075433}
   cannon: {fileID: 663539775}
+  pushButton: {fileID: 1643353675}
   ionPowerPercent:
   - 0%
   - 33%
@@ -53832,7 +53868,7 @@ GameObject:
   - component: {fileID: 9036149285944827240}
   m_Layer: 0
   m_Name: Flying Dutchman on Fire (1)
-  m_TagString: Untagged
+  m_TagString: EnemyShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
