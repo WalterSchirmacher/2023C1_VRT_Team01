@@ -7,6 +7,8 @@ TagManager:
   - Pellet
   - Battery
   - Food Pellet
+  - CannonTarget
+  - EnemyShip
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - CanonBall
   - EnemyShip
   - food pellet
-  - 
-  - 
+  - LeverBase
+  - LeverTop
   - 
   - 
   - 
