@@ -23,18 +23,9 @@ public class FireButton : MonoBehaviour
 
          laserColliderParent.transform.LookAt(targetObject.transform);
 
-            Vector3 centerPos = new Vector3(cannonPoint.transform.position.x + targetObject.transform.position.x, cannonPoint.transform.position.z + targetObject.transform.position.z) / 2f;
-
-           float scaleX = Mathf.Abs(cannonPoint.transform.position.x - targetObject.transform.position.x);
-           float scaleZ = Mathf.Abs(cannonPoint.transform.position.z - targetObject.transform.position.z);
-
-        laserColliderParent.transform.position = centerPos;
-           laserColliderParent.transform.localScale = new Vector3(scaleX, 0, scaleZ);
-
-      /*   Vector3 objectScale = laserColliderParent.transform.localScale;
-        float distance = Vector3.Distance(targetObject.transform.position, cannonPoint.transform.position);
-        Vector3 newScale = new Vector3(objectScale.x, objectScale.y, distance);
-        laserColliderParent.transform.localScale = newScale;
-      */
+        Vector3 vec = laserColliderParent.transform.position - targetObject.transform.position;
+        float vecMag = vec.magnitude;
+       laserCollider.transform.localPosition = new Vector3(laserCollider.transform.localPosition.x, laserCollider.transform.localPosition.y, vecMag/2);
+        laserCollider.transform.localScale = new Vector3(vecMag, laserCollider.transform.localScale.y, laserCollider.transform.localScale.z);
     }
 }
