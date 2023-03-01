@@ -2637,7 +2637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1230272183
 Transform:
   m_ObjectHideFlags: 0
@@ -4265,14 +4265,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480162610}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.71, y: 0, z: -3.22}
+  m_LocalRotation: {x: 0.02268737, y: 0, z: 0, w: 0.9997426}
+  m_LocalPosition: {x: -0.14, y: 0, z: -3.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1711854185}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.6, y: 0, z: 0}
 --- !u!114 &1480162614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6684,6 +6684,10 @@ PrefabInstance:
     - target: {fileID: 6111352199916109150, guid: 732120d2d7a0f01498ee527d1d923558, type: 3}
       propertyPath: m_Name
       value: AcceleratorLever_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111352199916109150, guid: 732120d2d7a0f01498ee527d1d923558, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732120d2d7a0f01498ee527d1d923558, type: 3}
