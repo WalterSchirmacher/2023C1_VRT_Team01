@@ -7,7 +7,6 @@ public class WheelController : MonoBehaviour
     HingeJoint hinge;
     public float storedDegrees;
     float lastFramesAngle;
-    // public GameObject boat;
     public GameObject oceanScenery;
 
     void Start()
@@ -33,8 +32,8 @@ public class WheelController : MonoBehaviour
         // add the change in rotation to total degrees rotated
         storedDegrees += differenceInAngle;
 
-        // rotate the boat according to the change in wheel rotation
-        oceanScenery.transform.Rotate(0, differenceInAngle / 100f, 0);        
+        // rotate the islands according to the change in wheel rotation
+        oceanScenery.transform.Rotate(0, -differenceInAngle / 20f, 0);
 
         // set last frame's wheel angle equal to this frame's angle for use in the next frame
         lastFramesAngle = hinge.angle;

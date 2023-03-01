@@ -32,6 +32,6 @@ public class SpeedLeverController : MonoBehaviour
 
         // move ocean scenery towards the ship an amount based on angle fraction
         // ** Vector direction may need to change based on direction the ship is facing **
-        oceanScenery.transform.Translate(-angleFraction / 100, 0, 0, Space.World);
+        oceanScenery.transform.Translate(-angleFraction / 100f, 0, 0, Space.World);
     }
 }
