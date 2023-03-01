@@ -2637,7 +2637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1230272183
 Transform:
   m_ObjectHideFlags: 0
@@ -6694,30 +6694,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8326531693796008444, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531693859790912, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531693992017228, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531694227742403, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531694295298556, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531694557925302, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: boat
-      value: 
-      objectReference: {fileID: 1336384418}
     - target: {fileID: 8326531694557925302, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: oceanScenery
       value: 
@@ -6770,15 +6746,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8326531694731883099, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
     - target: {fileID: 8326531695156352583, guid: 998b49e27f82d464fa14224dde161779, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1477500945}
-    - target: {fileID: 8326531695207155535, guid: 998b49e27f82d464fa14224dde161779, type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1477500945}
