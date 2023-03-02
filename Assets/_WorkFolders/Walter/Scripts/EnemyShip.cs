@@ -5,6 +5,12 @@ using UnityEngine;
 public class EnemyShip : MonoBehaviour
 {
     public bool isHit = false;
+    public GameObject fireParticleSys;
+
+    private void Awake()
+    {
+        fireParticleSys.SetActive(false);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
