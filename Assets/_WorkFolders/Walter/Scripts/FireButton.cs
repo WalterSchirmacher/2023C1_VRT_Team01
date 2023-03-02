@@ -7,6 +7,7 @@ public class FireButton : MonoBehaviour
 
     public GameObject laserColliderParent, laserCollider, cannonPoint, targetObject;
     public EnemyShip theEnemy;
+    public float showIonLaserTime = 1f;
     private Transform laserTransformer;
 
     // Start is called before the first frame update
@@ -20,12 +21,33 @@ public class FireButton : MonoBehaviour
     {
         MeshRenderer mesh = laserCollider.GetComponent<MeshRenderer>();
         mesh.enabled = true;
-
-         laserColliderParent.transform.LookAt(targetObject.transform);
+        laserColliderParent.SetActive(true);
+        laserCollider.SetActive(true);
+        laserColliderParent.transform.LookAt(targetObject.transform);
 
         Vector3 vec = laserColliderParent.transform.position - targetObject.transform.position;
         float vecMag = vec.magnitude;
-       laserCollider.transform.localPosition = new Vector3(laserCollider.transform.localPosition.x, laserCollider.transform.localPosition.y, vecMag/2);
+        laserCollider.transform.localPosition = new Vector3(laserCollider.transform.localPosition.x, laserCollider.transform.localPosition.y, vecMag/2);
         laserCollider.transform.localScale = new Vector3(vecMag, laserCollider.transform.localScale.y, laserCollider.transform.localScale.z);
+        StartCoroutine(HideLaserCollider());
+
+        if(theEnemy.isHit)
+        {
+            Debug.Log("Hit the Enemy");
+            theEnemy.fireParticleSys.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("Missed!");
+
+        }
+
+
+
+    }
+    IEnumerator HideLaserCollider()
+    {
+        yield return new WaitForSeconds(showIonLaserTime);
+        laserCollider.SetActive(false);
     }
 }
