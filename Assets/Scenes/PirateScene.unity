@@ -14213,6 +14213,8 @@ GameObject:
   - component: {fileID: 515561743}
   - component: {fileID: 515561747}
   - component: {fileID: 515561746}
+  - component: {fileID: 515561749}
+  - component: {fileID: 515561748}
   m_Layer: 10
   m_Name: Food Pellet (8)
   m_TagString: Food Pellet
@@ -14338,7 +14340,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 515561748}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -14437,6 +14452,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &515561748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515561741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &515561749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515561741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: d13ce73c-df3f-4ac5-a2fa-dbc089a6caaa
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 515561748}
+  _childViews: []
 --- !u!1 &521401792
 GameObject:
   m_ObjectHideFlags: 0
@@ -15196,6 +15252,8 @@ GameObject:
   - component: {fileID: 595218500}
   - component: {fileID: 595218501}
   - component: {fileID: 595218502}
+  - component: {fileID: 595218504}
+  - component: {fileID: 595218503}
   m_Layer: 0
   m_Name: Right Door
   m_TagString: Untagged
@@ -15340,7 +15398,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 595218503}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -15459,6 +15530,47 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &595218503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595218495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &595218504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595218495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 3d18a8b9-fa5b-4bbe-ade9-7fcffab80cf7
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 595218503}
+  _childViews: []
 --- !u!1 &599342896
 GameObject:
   m_ObjectHideFlags: 0
@@ -15791,6 +15903,8 @@ GameObject:
   - component: {fileID: 633710544}
   - component: {fileID: 633710548}
   - component: {fileID: 633710547}
+  - component: {fileID: 633710550}
+  - component: {fileID: 633710549}
   m_Layer: 10
   m_Name: Food Pellet (4)
   m_TagString: Food Pellet
@@ -15916,7 +16030,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633710549}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -16015,6 +16142,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &633710549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633710542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &633710550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633710542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: bda1099b-15a0-414a-96ad-6500a0da41df
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 633710549}
+  _childViews: []
 --- !u!1 &639778251
 GameObject:
   m_ObjectHideFlags: 0
@@ -17924,6 +18092,8 @@ GameObject:
   - component: {fileID: 780458306}
   - component: {fileID: 780458310}
   - component: {fileID: 780458309}
+  - component: {fileID: 780458312}
+  - component: {fileID: 780458311}
   m_Layer: 10
   m_Name: Food Pellet (6)
   m_TagString: Food Pellet
@@ -18049,7 +18219,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 780458311}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -18148,6 +18331,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &780458311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780458304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &780458312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780458304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 89d9239b-2dd3-4f60-a07a-36d91d5a856e
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 780458311}
+  _childViews: []
 --- !u!1 &781265531
 GameObject:
   m_ObjectHideFlags: 0
@@ -25879,6 +26103,8 @@ GameObject:
   - component: {fileID: 1000006643}
   - component: {fileID: 1000006647}
   - component: {fileID: 1000006646}
+  - component: {fileID: 1000006649}
+  - component: {fileID: 1000006648}
   m_Layer: 10
   m_Name: Food Pellet (5)
   m_TagString: Food Pellet
@@ -26004,7 +26230,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1000006648}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -26103,6 +26342,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1000006648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000006641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1000006649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000006641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: c375f0f8-be56-4013-8dcc-1096cb2d232c
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1000006648}
+  _childViews: []
 --- !u!1 &1009684501
 GameObject:
   m_ObjectHideFlags: 0
@@ -33043,6 +33323,8 @@ GameObject:
   - component: {fileID: 1141536446}
   - component: {fileID: 1141536450}
   - component: {fileID: 1141536449}
+  - component: {fileID: 1141536452}
+  - component: {fileID: 1141536451}
   m_Layer: 10
   m_Name: Food Pellet (3)
   m_TagString: Food Pellet
@@ -33168,7 +33450,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1141536451}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -33267,6 +33562,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1141536451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141536444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1141536452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141536444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: bd6be401-ee32-4ee0-b4f9-ec38a6a6d29b
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1141536451}
+  _childViews: []
 --- !u!1 &1151075352
 GameObject:
   m_ObjectHideFlags: 0
@@ -33915,6 +34251,8 @@ GameObject:
   - component: {fileID: 1171240351}
   - component: {fileID: 1171240355}
   - component: {fileID: 1171240354}
+  - component: {fileID: 1171240357}
+  - component: {fileID: 1171240356}
   m_Layer: 10
   m_Name: Food Pellet (7)
   m_TagString: Food Pellet
@@ -34040,7 +34378,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1171240356}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -34139,6 +34490,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1171240356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171240349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1171240357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171240349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 29c0c4cf-7b8a-4384-9fd3-712b553f4e6a
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1171240356}
+  _childViews: []
 --- !u!1001 &1178728790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34607,6 +34999,8 @@ GameObject:
   - component: {fileID: 1211726167}
   - component: {fileID: 1211726166}
   - component: {fileID: 1211726165}
+  - component: {fileID: 1211726169}
+  - component: {fileID: 1211726168}
   m_Layer: 0
   m_Name: Left Door
   m_TagString: Untagged
@@ -34771,7 +35165,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1211726168}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -34870,6 +35277,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1211726168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211726160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1211726169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211726160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 625283bd-f90a-4795-86e2-475b3d27fe90
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1211726168}
+  _childViews: []
 --- !u!1 &1216144942
 GameObject:
   m_ObjectHideFlags: 0
@@ -35093,6 +35541,8 @@ GameObject:
   - component: {fileID: 1250267176}
   - component: {fileID: 1250267180}
   - component: {fileID: 1250267179}
+  - component: {fileID: 1250267182}
+  - component: {fileID: 1250267181}
   m_Layer: 10
   m_Name: Food Pellet
   m_TagString: Food Pellet
@@ -35218,7 +35668,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1250267181}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -35317,6 +35780,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1250267181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250267174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1250267182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250267174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 169464a4-aa5b-453d-ac8d-56a25729290d
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1250267181}
+  _childViews: []
 --- !u!1 &1250452653
 GameObject:
   m_ObjectHideFlags: 0
@@ -39391,6 +39895,8 @@ GameObject:
   - component: {fileID: 1534530840}
   - component: {fileID: 1534530844}
   - component: {fileID: 1534530843}
+  - component: {fileID: 1534530846}
+  - component: {fileID: 1534530845}
   m_Layer: 10
   m_Name: Food Pellet (1)
   m_TagString: Food Pellet
@@ -39516,7 +40022,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1534530845}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -39615,6 +40134,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1534530845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534530838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1534530846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534530838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 190b2100-835b-4189-b0fe-30c4164c1571
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1534530845}
+  _childViews: []
 --- !u!1 &1547393368
 GameObject:
   m_ObjectHideFlags: 0
@@ -39725,6 +40285,8 @@ GameObject:
   - component: {fileID: 1549066925}
   - component: {fileID: 1549066924}
   - component: {fileID: 1549066923}
+  - component: {fileID: 1549066930}
+  - component: {fileID: 1549066929}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -39826,7 +40388,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1549066929}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -39987,6 +40562,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549066921}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1549066929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549066921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &1549066930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549066921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: d16f7f3e-f65e-482b-a451-eec10f085053
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1549066929}
+  _childViews: []
 --- !u!1 &1555037333
 GameObject:
   m_ObjectHideFlags: 0
@@ -42040,7 +42656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -44700,6 +45316,8 @@ GameObject:
   - component: {fileID: 2028043598}
   - component: {fileID: 2028043602}
   - component: {fileID: 2028043601}
+  - component: {fileID: 2028043604}
+  - component: {fileID: 2028043603}
   m_Layer: 10
   m_Name: Food Pellet (2)
   m_TagString: Food Pellet
@@ -44825,7 +45443,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2028043603}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -44924,6 +45555,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &2028043603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028043596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &2028043604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028043596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 3fc42f49-6145-4e32-a3e2-2af6262ef2b0
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 2028043603}
+  _childViews: []
 --- !u!1 &2029806828
 GameObject:
   m_ObjectHideFlags: 0
