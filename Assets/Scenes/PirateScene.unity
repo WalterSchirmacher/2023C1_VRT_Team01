@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.03997338, g: 0.03997338, b: 0.039632637, a: 1}
+  m_IndirectSpecularColor: {r: 0.040106896, g: 0.040106896, b: 0.03976181, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -330,6 +330,9 @@ GameObject:
   - component: {fileID: 12799275}
   - component: {fileID: 12799282}
   - component: {fileID: 12799281}
+  - component: {fileID: 12799284}
+  - component: {fileID: 12799283}
+  - component: {fileID: 12799285}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -380,7 +383,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 12799283}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -649,6 +665,61 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 5
   m_ConnectedMassScale: 1
+--- !u!114 &12799283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12799274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &12799284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12799274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 60e170d7-09be-4069-8969-d410af5ee356
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 12799283}
+  - componentID: 2
+    component: {fileID: 12799285}
+  _childViews: []
+--- !u!114 &12799285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12799274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ed10cb9ae4d974aa0ba87c2cfeaacc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &15115671
 GameObject:
   m_ObjectHideFlags: 0
@@ -10543,6 +10614,8 @@ GameObject:
   - component: {fileID: 295962459}
   - component: {fileID: 295962458}
   - component: {fileID: 295962457}
+  - component: {fileID: 295962464}
+  - component: {fileID: 295962463}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -10709,7 +10782,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 295962463}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -10870,6 +10956,47 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295962455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &295962463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295962455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &295962464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295962455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 21c02305-a60b-4eb0-9f2d-a063adc1f6b2
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 295962463}
+  _childViews: []
 --- !u!1 &302748287
 GameObject:
   m_ObjectHideFlags: 0
@@ -50982,7 +51109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1715263786
 GameObject:
@@ -64560,6 +64687,8 @@ GameObject:
   - component: {fileID: 3766088500448123791}
   - component: {fileID: 3766088500448123803}
   - component: {fileID: 3766088500448123780}
+  - component: {fileID: 3766088500448123783}
+  - component: {fileID: 3766088500448123782}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -64567,6 +64696,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3766088500448123782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3766088500448123781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
+--- !u!114 &3766088500448123783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3766088500448123781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 2861d289-6982-4c8b-a583-09ad68b791fe
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 3766088500448123782}
+  _childViews: []
 --- !u!33 &3766088500448123784
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -64708,7 +64878,20 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3766088500448123782}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []

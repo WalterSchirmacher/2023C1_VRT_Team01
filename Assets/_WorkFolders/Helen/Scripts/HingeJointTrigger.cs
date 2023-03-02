@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,14 +14,24 @@ public class HingeJointTrigger : MonoBehaviour
 
     public enum HingeJointState { Min, Max, None }
     private HingeJoint hinge;
+    HingeJointTriggerSync sync;
 
-    
+
+    private void Awake()
+    {
+        sync = GetComponent<HingeJointTriggerSync>();
+    }
+
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
+        HingeActivate();
+        
     }
 
-    private void FixedUpdate()
+
+
+    public void HingeActivate()
     {
         float angleWithMinLimit = Mathf.Abs(hinge.angle - hinge.limits.min);
         float angleWithMaxLimit = Mathf.Abs(hinge.angle - hinge.limits.max);
@@ -47,5 +58,6 @@ public class HingeJointTrigger : MonoBehaviour
         {
             hingeJointState = HingeJointState.None;
         }
+        sync.SendOutNewAngle();
     }
 }
