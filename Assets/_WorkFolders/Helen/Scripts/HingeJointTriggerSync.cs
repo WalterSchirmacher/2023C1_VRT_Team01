@@ -16,7 +16,7 @@ public class HingeJointTriggerSync : RealtimeComponent<HingeJointTriggerModel>
     void UpdateLocalHinge() 
     {
         hingejoint.angleBetweenThreshold = model.angleBetweenThreshold;
-        hingejoint.HingeActivate();
+        //hingejoint.HingeActivate();
         
     }
 
