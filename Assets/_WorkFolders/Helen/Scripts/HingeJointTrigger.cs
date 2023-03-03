@@ -25,13 +25,13 @@ public class HingeJointTrigger : MonoBehaviour
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
-        HingeActivate();
+        //HingeActivate();
         
     }
 
 
 
-    public void HingeActivate()
+    public void Update()
     {
         float angleWithMinLimit = Mathf.Abs(hinge.angle - hinge.limits.min);
         float angleWithMaxLimit = Mathf.Abs(hinge.angle - hinge.limits.max);
