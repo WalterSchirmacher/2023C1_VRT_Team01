@@ -12,9 +12,15 @@ public class ParrotEat : MonoBehaviour
 
     private XRSocketInteractor socketInteractor;
     private GameObject objectToDestroy;
-    private bool isObjectInSocket;
-    public AudioClip parrotNoise; 
+    public bool isObjectInSocket;
+    public AudioClip parrotNoise;
+    ParrotEatSync sync;
 
+
+    private void Awake()
+    {
+        sync = GetComponent<ParrotEatSync>();
+    }
     private void Start()
     {
        
@@ -22,7 +28,7 @@ public class ParrotEat : MonoBehaviour
         socketInteractor.onSelectEntered.AddListener(ObjectEnteredSocket);
     }
 
-    private void ObjectEnteredSocket(XRBaseInteractable interactable)
+    public void ObjectEnteredSocket(XRBaseInteractable interactable)
     {
         
         objectToDestroy = interactable.gameObject;
@@ -31,7 +37,7 @@ public class ParrotEat : MonoBehaviour
         
     }
 
-    private void DestroyObject()
+    public void DestroyObject()
     {
         
         if (isObjectInSocket)
@@ -40,7 +46,7 @@ public class ParrotEat : MonoBehaviour
             AudioSource.PlayClipAtPoint(parrotNoise, objectToDestroy.transform.position); 
             anim.SetTrigger("dance");
             isObjectInSocket = false;
-           
+            sync.SendOutNewInfo();
         }
     }
 }
