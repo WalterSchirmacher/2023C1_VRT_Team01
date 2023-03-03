@@ -51730,7 +51730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -66477,6 +66477,8 @@ GameObject:
   - component: {fileID: 4461202270446486599}
   - component: {fileID: 4461202270446486596}
   - component: {fileID: 4461202270446486617}
+  - component: {fileID: 4461202270446486619}
+  - component: {fileID: 4461202270446486618}
   m_Layer: 0
   m_Name: Geo_Parrot
   m_TagString: Untagged
@@ -66497,7 +66499,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 4461202270446486596}
+  isObjectInSocket: 0
   parrotNoise: {fileID: 8300000, guid: 90402d5857fb32844a71f31c425e4d5b, type: 3}
+--- !u!114 &4461202270446486618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461202270446486616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c222749646777547a4e67187200bace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4461202270446486619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461202270446486616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 054dddf1-4782-4259-92c3-3e25dade8d54
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 4461202270446486618}
+  _childViews: []
 --- !u!4 &4488259162496865959
 Transform:
   m_ObjectHideFlags: 0
