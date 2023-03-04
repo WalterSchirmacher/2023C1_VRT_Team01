@@ -38,15 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-<<<<<<< Updated upstream
-  m_IndirectSpecularColor: {r: 0.1889011, g: 0.1889011, b: 0.18771926, a: 1}
-=======
-<<<<<<< HEAD
-  m_IndirectSpecularColor: {r: 0.039975174, g: 0.039975174, b: 0.039635807, a: 1}
-=======
-  m_IndirectSpecularColor: {r: 0.1889011, g: 0.1889011, b: 0.18771926, a: 1}
->>>>>>> 77106dcc794dc902072607ed15e8749791b76071
->>>>>>> Stashed changes
+  m_IndirectSpecularColor: {r: 0.18892297, g: 0.18892297, b: 0.18774113, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10154,7 +10146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271685556}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.622, y: 3.241, z: -0.141}
+  m_LocalPosition: {x: 3.67, y: 1.801, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1984577226}
@@ -10704,7 +10696,7 @@ ConfigurableJoint:
   m_Anchor: {x: -0.09, y: 0.04, z: 0.25}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.8719244, y: 2.3816004, z: -2.5165927}
+  m_ConnectedAnchor: {x: -2.8719244, y: 2.3816004, z: -2.5165925}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -17029,7 +17021,7 @@ HingeJoint:
   m_Anchor: {x: -2.3, y: 0, z: 0.5}
   m_Axis: {x: -0.1, y: 41, z: 1.14}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -3.1592624, y: 2.2005, z: -0.61795574}
+  m_ConnectedAnchor: {x: -3.1592624, y: 2.2005, z: -0.6179557}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -54782,7 +54774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984577225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 391552358}
@@ -55819,7 +55811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040475753}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.7397256, y: 0.0041651726, z: 0.16}
+  m_LocalPosition: {x: -1.7397256, y: 0.0041651726, z: 0.00053488836}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 609829559}
