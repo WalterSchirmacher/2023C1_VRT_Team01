@@ -38,7 +38,15 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< Updated upstream
   m_IndirectSpecularColor: {r: 0.1889011, g: 0.1889011, b: 0.18771926, a: 1}
+=======
+<<<<<<< HEAD
+  m_IndirectSpecularColor: {r: 0.039975174, g: 0.039975174, b: 0.039635807, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.1889011, g: 0.1889011, b: 0.18771926, a: 1}
+>>>>>>> 77106dcc794dc902072607ed15e8749791b76071
+>>>>>>> Stashed changes
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10133,9 +10141,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 391552361}
   m_OriginBaseGameObject: {fileID: 271685556}
-  m_CameraFloorOffsetObject: {fileID: 0}
+  m_CameraFloorOffsetObject: {fileID: 1984577225}
   m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &271685559
@@ -10146,7 +10154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271685556}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.67, y: 1.801, z: -0.31}
+  m_LocalPosition: {x: 3.622, y: 3.241, z: -0.141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1984577226}
@@ -54774,7 +54782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984577225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 391552358}
@@ -55811,7 +55819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040475753}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.7397256, y: 0.0041651726, z: 0.00053488836}
+  m_LocalPosition: {x: -1.7397256, y: 0.0041651726, z: 0.16}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 609829559}
