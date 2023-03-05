@@ -5,22 +5,38 @@ using UnityEngine;
 public class EnemyShip : MonoBehaviour
 {
     public bool isHit = false;
+    public bool fireActive = false;
     public GameObject fireParticleSys;
+    EnemyShipSync sync;
 
-    private void Awake()
+    void Awake()
     {
-        fireParticleSys.SetActive(false);
+        sync = GetComponent<EnemyShipSync>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("CannonTarget"))
+        if(collision.gameObject.CompareTag("CannonTarget") && !isHit)
         {
             isHit = true;
+            sync.SendOutHitFireInfo();
         }
     }
     private void OnCollisionExit(Collision collision)
     {
         isHit = false;
+        sync.SendOutHitFireInfo();
     }
+
+    public void SetFire(bool bol)
+    {
+        fireActive = bol;
+        UpdateFire();
+        sync.SendOutHitFireInfo();
+    }
+    public void UpdateFire()
+    {
+        fireParticleSys.SetActive(fireActive);
+    }
+
 }

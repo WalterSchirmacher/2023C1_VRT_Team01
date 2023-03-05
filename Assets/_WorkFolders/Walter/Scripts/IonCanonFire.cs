@@ -26,6 +26,11 @@ public class IonCanonFire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        DrawLines();
+    }
+
+    public void DrawLines()
+    {
         lineLeft.SetPosition(0, ionLaserLeft.transform.position);
         lineLeft.SetPosition(1, targetingCircle.transform.position);
         lineLeft.startWidth = startWidth;
