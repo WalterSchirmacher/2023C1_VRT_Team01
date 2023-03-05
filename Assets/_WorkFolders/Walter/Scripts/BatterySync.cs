@@ -5,43 +5,45 @@ using Normal.Realtime;
 
 public class BatterySync : RealtimeComponent<BatterySyncModel> {
 
+    Batteries localBattery;
+
+    private void Awake()
+    {
+        localBattery = GetComponent<Batteries>();
+    }
+
+    void UpdateLocalBattery()
+    {
+        localBattery.isVisible = model.isShowing;
+        localBattery.ChangeVisibility();
+    }
+
+    void SubscribableUpdateLocalBattery(BatterySyncModel movel, bool passedIsShowing)
+    {
+        UpdateLocalBattery();
+    }
+
     protected override void OnRealtimeModelReplaced(BatterySyncModel previousModel, BatterySyncModel currentModel)
     {
-        if (previousModel != null)
+        if(previousModel != null)
         {
-            // Unregister from events
-            previousModel.isShowingDidChange -= IsShowingDidChange;
+            previousModel.isShowingDidChange -= SubscribableUpdateLocalBattery;
         }
 
-        if (currentModel != null)
+        if(currentModel != null)
         {
-            // If this is a model that has no data set on it, populate it with the current Battery status.
             if (currentModel.isFreshModel)
-                currentModel.isShowing = gameObject.activeSelf;
-
-            // Update the battery status to match the new model
-            UpdateBatteryVisibility();
-
-            // Register for events so we'll know if the battery status changes later
-            currentModel.isShowingDidChange += IsShowingDidChange;
+            {
+                currentModel.isShowing = localBattery.isVisible;
+            }
+            currentModel.isShowingDidChange += SubscribableUpdateLocalBattery;
+            UpdateLocalBattery();
         }
     }
 
-    private void IsShowingDidChange(BatterySyncModel model, bool value)
+    public void SendOutNewVisibility()
     {
-        // Update the mesh renderer
-        UpdateBatteryVisibility();
+        model.isShowing = localBattery.isVisible;
     }
 
-    private void UpdateBatteryVisibility()
-    {
-        gameObject.SetActive(model.isShowing);
-    }
-
-    public void SetBatteryActive(bool bol)
-    {
-        // Set the Battery Status on the model
-        // This will fire the IsSHowingDidChange event on the model, which will update the renderer for both the local player and all remote players.
-        model.isShowing = bol;
-    }
 }
