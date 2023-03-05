@@ -28,4 +28,5 @@ public class Batteries : MonoBehaviour
     {
         gameObject.SetActive(isVisible);
     }
+
 }
