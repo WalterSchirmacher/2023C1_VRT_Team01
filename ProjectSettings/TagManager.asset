@@ -10,6 +10,8 @@ TagManager:
   - CannonTarget
   - EnemyShip
   - Island
+  - FrontCD
+  - RearCD
   layers:
   - Default
   - TransparentFX
