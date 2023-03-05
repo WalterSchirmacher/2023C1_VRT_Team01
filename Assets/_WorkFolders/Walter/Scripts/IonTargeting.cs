@@ -175,32 +175,32 @@ public class IonTargeting : MonoBehaviour
                 //Moving target right
                 if (targetObject.transform.position.z < zMax)
                 {
-                    targetObject.transform.position += Vector3.forward * Time.deltaTime;
-                } else
-                {
-                    targetObject.transform.position -= Vector3.forward * Time.deltaTime;
-                    if (!audioSource)
-                    {
-                        audioSource.Play();
-                    }
+                    targetPos = targetObject.transform.position + Vector3.forward * Time.deltaTime;
+                    playErr = false;
                 }
+                else
+                {
+                    targetPos = targetObject.transform.position - Vector3.forward * Time.deltaTime;
+                    playErr = true;
+                }
+                UpdateTargetPos();
+                sync.SendOutNewUpdate();
             }
             else if (posNeg == -1)
             {
                 // Moving target left
                 if (targetObject.transform.position.z > zLimit)
                 {
-                    targetObject.transform.position += Vector3.back * Time.deltaTime;
+                    targetPos = targetObject.transform.position + Vector3.back * Time.deltaTime;
+                    playErr = false;
                 }
                 else
                 {
-                    targetObject.transform.position -= Vector3.back * Time.deltaTime;
-                    if (!audioSource)
-                    {
-                        audioSource.Play();
-                    }
+                    targetPos = targetObject.transform.position - Vector3.back * Time.deltaTime;
+                    playErr = true;
                 }
-
+                UpdateTargetPos();
+                sync.SendOutNewUpdate();
             }
             else
             {

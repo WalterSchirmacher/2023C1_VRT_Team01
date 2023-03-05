@@ -18,6 +18,7 @@ public class IonTargetingNewSync : RealtimeComponent<IonTargetingNewModel>
         localIonTargeting.targetPos = model.targetPosition;
         localIonTargeting.playErr = model.playErrSnd;
         localIonTargeting.UpdateMoveObj();
+        localIonTargeting.UpdateTargetPos();
     }
 
     void SubscribableUpdateLocalReceiver(IonTargetingNewModel model, bool passBool)
