@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Batteries : MonoBehaviour
 {
-    public bool isVisible;
+    public bool isVisible = true;
     BatterySync sync;
 
     void Awake()
@@ -14,7 +14,7 @@ public class Batteries : MonoBehaviour
 
     private void Start()
     {
-        UpdateVisVar(true);
+       UpdateVisVar(true);
     }
 
     public void UpdateVisVar(bool vis)
