@@ -5,28 +5,41 @@ using UnityEngine;
 public class Batteries : MonoBehaviour
 {
     public bool isVisible = true;
+    public GameObject homeBase;
     BatterySync sync;
 
     void Awake()
     {
-      sync = GetComponent<BatterySync>(); 
+      sync = GetComponent<BatterySync>();
+        isVisible = true;
     }
 
     private void Start()
     {
-       UpdateVisVar(true);
-    }
+        gameObject.SetActive(true);
+        isVisible = true;
+;    }
 
     public void UpdateVisVar(bool vis)
     {
         isVisible = vis;
-        ChangeVisibility();
+        if(!isVisible)
+        {
+            GoHome();
+        }
        sync.SendOutVisibility();
     }
 
     public void ChangeVisibility()
     {
-        gameObject.SetActive(isVisible);
+        gameObject.SetActive(true);
+        GoHome();
+    }
+
+    public void GoHome()
+    {
+        gameObject.SetActive(true);
+        gameObject.transform.position = homeBase.transform.position;
     }
 
 }
