@@ -64445,7 +64445,7 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
+  _maintainOwnershipWhileSleeping: 1
 --- !u!114 &863899988340409163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64682,7 +64682,7 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
+  _maintainOwnershipWhileSleeping: 1
 --- !u!114 &1059301219291448861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65017,7 +65017,7 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
+  _maintainOwnershipWhileSleeping: 1
 --- !u!114 &1444789874660677939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66727,7 +66727,7 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
+  _maintainOwnershipWhileSleeping: 1
 --- !u!114 &3547331901524155080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66833,7 +66833,98 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8326531693605329078}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4761586138778991454}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6636243173286828820}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5017425270095942157}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 863899988340409162}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3547331901524155079}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1059301219291448860}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1444789874660677938}
         m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
           Normcore
         m_MethodName: RequestOwnership
@@ -69891,7 +69982,7 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
+  _maintainOwnershipWhileSleeping: 1
 --- !u!114 &5017425270095942158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71065,7 +71156,98 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8326531693605329078}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4761586138778991454}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6636243173286828820}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5017425270095942157}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 863899988340409162}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3547331901524155079}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1059301219291448860}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+          Normcore
+        m_MethodName: RequestOwnership
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1444789874660677938}
         m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
           Normcore
         m_MethodName: RequestOwnership
