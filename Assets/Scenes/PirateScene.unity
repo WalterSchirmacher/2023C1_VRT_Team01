@@ -14959,6 +14959,7 @@ GameObject:
   - component: {fileID: 509081476}
   - component: {fileID: 509081482}
   - component: {fileID: 509081481}
+  - component: {fileID: 509081483}
   m_Layer: 6
   m_Name: IonLeftRight
   m_TagString: Untagged
@@ -14990,11 +14991,14 @@ MonoBehaviour:
   leverOutput: 0
   stopMoveLow: -5
   stopMoveHigh: 5
+  targetPos: {x: 0, y: 0, z: 0}
   backHit: 0
   forwardHit: 0
   leftHit: 0
   rightHit: 0
   moveObj: 0
+  playErr: 0
+  sync: {fileID: 0}
 --- !u!59 &509081477
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -15020,7 +15024,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -90
+    min: -60
     max: 60
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -15265,7 +15269,21 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 509081481}
+  - componentID: 2
+    component: {fileID: 509081483}
   _childViews: []
+--- !u!114 &509081483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509081475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878a3fecbb287064b8011be773551ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509265245
 GameObject:
   m_ObjectHideFlags: 0
@@ -15932,8 +15950,8 @@ GameObject:
   - component: {fileID: 535789175}
   - component: {fileID: 535789179}
   - component: {fileID: 535789178}
-  - component: {fileID: 535789180}
   - component: {fileID: 535789181}
+  - component: {fileID: 535789180}
   m_Layer: 0
   m_Name: Battery (3)
   m_TagString: Battery
@@ -16166,6 +16184,10 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 535789178}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
     component: {fileID: 535789180}
   _childViews: []
 --- !u!114 &535789180
@@ -19177,8 +19199,8 @@ GameObject:
   - component: {fileID: 729996459}
   - component: {fileID: 729996463}
   - component: {fileID: 729996462}
-  - component: {fileID: 729996464}
   - component: {fileID: 729996465}
+  - component: {fileID: 729996464}
   m_Layer: 0
   m_Name: Battery (5)
   m_TagString: Battery
@@ -19411,6 +19433,10 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 729996462}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
     component: {fileID: 729996464}
   _childViews: []
 --- !u!114 &729996464
@@ -22003,7 +22029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isHit: 0
-  fireParticleSys: {fileID: 0}
+  fireParticleSys: {fileID: 240261890}
 --- !u!1 &875011789
 GameObject:
   m_ObjectHideFlags: 0
@@ -45507,8 +45533,8 @@ GameObject:
   - component: {fileID: 1610292517}
   - component: {fileID: 1610292521}
   - component: {fileID: 1610292520}
-  - component: {fileID: 1610292522}
   - component: {fileID: 1610292523}
+  - component: {fileID: 1610292522}
   m_Layer: 0
   m_Name: Battery (2)
   m_TagString: Battery
@@ -45741,6 +45767,10 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 1610292520}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
     component: {fileID: 1610292522}
   _childViews: []
 --- !u!114 &1610292522
@@ -51780,8 +51810,8 @@ GameObject:
   - component: {fileID: 1721569036}
   - component: {fileID: 1721569040}
   - component: {fileID: 1721569039}
-  - component: {fileID: 1721569041}
   - component: {fileID: 1721569042}
+  - component: {fileID: 1721569041}
   m_Layer: 0
   m_Name: Battery (1)
   m_TagString: Battery
@@ -52014,6 +52044,10 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 1721569039}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
     component: {fileID: 1721569041}
   _childViews: []
 --- !u!114 &1721569041
@@ -52460,6 +52494,7 @@ GameObject:
   - component: {fileID: 1760717286}
   - component: {fileID: 1760717292}
   - component: {fileID: 1760717291}
+  - component: {fileID: 1760717293}
   m_Layer: 6
   m_Name: IonForwardBack
   m_TagString: Untagged
@@ -52491,11 +52526,14 @@ MonoBehaviour:
   leverOutput: 0
   stopMoveLow: -5
   stopMoveHigh: 5
+  targetPos: {x: 0, y: 0, z: 0}
   backHit: 0
   forwardHit: 0
   leftHit: 0
   rightHit: 0
   moveObj: 0
+  playErr: 0
+  sync: {fileID: 0}
 --- !u!59 &1760717287
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -52521,7 +52559,7 @@ HingeJoint:
     freeSpin: 0
   m_UseLimits: 1
   m_Limits:
-    min: -90
+    min: -60
     max: 60
     bounciness: 0
     bounceMinVelocity: 0.2
@@ -52766,7 +52804,21 @@ MonoBehaviour:
   _components:
   - componentID: 1
     component: {fileID: 1760717291}
+  - componentID: 2
+    component: {fileID: 1760717293}
   _childViews: []
+--- !u!114 &1760717293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760717285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878a3fecbb287064b8011be773551ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1781196588
 GameObject:
   m_ObjectHideFlags: 0
@@ -56677,8 +56729,8 @@ GameObject:
   - component: {fileID: 2107813409}
   - component: {fileID: 2107813413}
   - component: {fileID: 2107813412}
-  - component: {fileID: 2107813414}
   - component: {fileID: 2107813415}
+  - component: {fileID: 2107813414}
   m_Layer: 0
   m_Name: Battery (4)
   m_TagString: Battery
@@ -56911,6 +56963,10 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 2107813412}
   - componentID: 2
+    component: {fileID: 0}
+  - componentID: 3
+    component: {fileID: 0}
+  - componentID: 4
     component: {fileID: 2107813414}
   _childViews: []
 --- !u!114 &2107813414
@@ -64609,10 +64665,10 @@ GameObject:
   - component: {fileID: 2818428573143566259}
   - component: {fileID: 2818428573143566258}
   - component: {fileID: 2818428573143566257}
+  - component: {fileID: 2818428573143566263}
   - component: {fileID: 2818428573143566261}
   - component: {fileID: 2818428573143566260}
   - component: {fileID: 2818428573143566262}
-  - component: {fileID: 2818428573143566263}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Battery
@@ -64663,9 +64719,8 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2818428573143566260}
-        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
-          Normcore
+      - m_Target: {fileID: 2818428573143566261}
+        m_TargetAssemblyTypeName: Normal.Realtime.RealtimeView, Normcore
         m_MethodName: RequestOwnership
         m_Mode: 1
         m_Arguments:
@@ -64796,15 +64851,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2818428573143566256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolate: 1
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
 --- !u!114 &2818428573143566261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64819,15 +64868,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _realtime: {fileID: 1818406743}
   _sceneViewUUID: 
-  _viewUUID: fa3cf58f-5d81-4f88-a8dc-260fb3ed7d60
+  _viewUUID: 6ca5cafc-fc70-4b4f-8009-25fcfc539093
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
   _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
-    component: {fileID: 2818428573143566260}
+    component: {fileID: 0}
   - componentID: 2
+    component: {fileID: 2818428573143566260}
+  - componentID: 3
     component: {fileID: 2818428573143566262}
   _childViews: []
 --- !u!114 &2818428573143566262
@@ -64839,9 +64890,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2818428573143566256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
+  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolate: 1
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncVelocity: 1
+  _maintainOwnershipWhileSleeping: 0
 --- !u!114 &2818428573143566263
 MonoBehaviour:
   m_ObjectHideFlags: 0

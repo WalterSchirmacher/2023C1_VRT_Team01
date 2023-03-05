@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Batteries : MonoBehaviour
 {
-    [HideInInspector]
     public bool isVisible;
     BatterySync sync;
 
     void Awake()
     {
-        sync = GetComponent<BatterySync>();
+      sync = GetComponent<BatterySync>(); 
+    }
+
+    private void Start()
+    {
         UpdateVisVar(true);
     }
 
@@ -18,7 +21,7 @@ public class Batteries : MonoBehaviour
     {
         isVisible = vis;
         ChangeVisibility();
-        sync.SendOutNewVisibility();
+       sync.SendOutVisibility();
     }
 
     public void ChangeVisibility()

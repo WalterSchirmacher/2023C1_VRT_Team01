@@ -20,13 +20,16 @@ public class IonTargeting : MonoBehaviour
     public int stopMoveHigh = 5;
     private float minValue, maxValue;
     private Vector3 targetStart;
+    public Vector3 targetPos;
     [HideInInspector]
     public bool backHit = false, forwardHit = false, leftHit = false, rightHit = false;
 
     public bool moveObj = false;
+    public bool playErr = false;
     private float stopLow, stopHigh;
     private float xLimit, xMax, zLimit, zMax;
     private GameObject fireButton;
+    public IonTargetingNewSync sync;
 
     // Start is called before the first frame update
     void Start()
@@ -60,21 +63,51 @@ public class IonTargeting : MonoBehaviour
     public void StartMoving()
     {
         moveObj = true;
-        Cannon.MakeTransparent();
-        if(!targetObject.activeInHierarchy)
-        {
-            targetObject.SetActive(true);
-        }
-        if (!fireButton.activeInHierarchy)
-        {
-            fireButton.SetActive(true);
-        }
+        UpdateMoveObj();
+        sync.SendOutNewUpdate();
     }
 
     public void StopMoving()
     {
         moveObj = false;
-        Cannon.MakeVisible();
+        UpdateMoveObj();
+        sync.SendOutNewUpdate();
+    }
+
+    public void UpdateMoveObj()
+    {
+        
+        if (moveObj)
+        {
+            Cannon.MakeTransparent();
+            if (!targetObject.activeInHierarchy)
+            {
+                targetObject.SetActive(true);
+            }
+            if (!fireButton.activeInHierarchy)
+            {
+                fireButton.SetActive(true);
+            }
+        } else
+        {
+            Cannon.MakeVisible();
+        }
+    }
+
+    public void UpdateTargetPos()
+    {
+        if(moveObj)
+        {
+            targetObject.transform.position = targetPos;
+            if (playErr)
+            {
+                playErr = false;
+                if (!audioSource)
+                {
+                    audioSource.Play();
+                }
+            }
+        }
     }
 
     private void UpdatePosForwardBack()
@@ -93,34 +126,33 @@ public class IonTargeting : MonoBehaviour
                 // Check if not moving back over the limit, otherwise reverse it slightly to keep it out of the buffer.
                 if (targetObject.transform.position.x < xLimit)
                 {
-                    targetObject.transform.position += Vector3.right * Time.deltaTime;
+                    targetPos = targetObject.transform.position + Vector3.right * Time.deltaTime;
+                    playErr = false; 
                 }
                 else
                 {
-                    targetObject.transform.position -= Vector3.right * Time.deltaTime;
-                    if(!audioSource)
-                    {
-                        audioSource.Play();
-                    }
-                    
+                    targetPos = targetObject.transform.position - Vector3.right * Time.deltaTime;
+                    playErr = true;
                 }
-             //   Debug.Log("Moving Back " + targetObject.transform.position.x);
+                UpdateTargetPos();
+                sync.SendOutNewUpdate();
+                //   Debug.Log("Moving Back " + targetObject.transform.position.x);
             }
             else if (posNeg == -1)
             {
                 // Move Forward towards Enemy Pirate Ship
                 if (targetObject.transform.position.x > xMax)
                 {
-                    targetObject.transform.position += Vector3.left * Time.deltaTime;
+                    targetPos = targetObject.transform.position + Vector3.left * Time.deltaTime;
+                    playErr = false;
                 }
                 else
                 {
-                    targetObject.transform.position -= Vector3.left * Time.deltaTime;
-                    if (!audioSource)
-                    {
-                        audioSource.Play();
-                    }
-                } 
+                    targetPos = targetObject.transform.position -= Vector3.left * Time.deltaTime;
+                    playErr = true;
+                }
+                UpdateTargetPos();
+                sync.SendOutNewUpdate();
             }
             else
             {

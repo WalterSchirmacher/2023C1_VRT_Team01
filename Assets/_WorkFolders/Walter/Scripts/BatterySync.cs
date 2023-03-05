@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Normal.Realtime;
 
-public class BatterySync : RealtimeComponent<BatterySyncModel> {
+public class BatterySync : RealtimeComponent<BatteriesModel> {
 
     Batteries localBattery;
 
@@ -14,36 +14,37 @@ public class BatterySync : RealtimeComponent<BatterySyncModel> {
 
     void UpdateLocalBattery()
     {
-        localBattery.isVisible = model.isShowing;
+        localBattery.isVisible = model.vis;
         localBattery.ChangeVisibility();
     }
 
-    void SubscribableUpdateLocalBattery(BatterySyncModel model, bool passedIsShowing)
+    void SubscribableUpdateLocalBattery(BatteriesModel model, bool passedIsShowing)
     {
         UpdateLocalBattery();
     }
 
-    protected override void OnRealtimeModelReplaced(BatterySyncModel previousModel, BatterySyncModel currentModel)
+    protected override void OnRealtimeModelReplaced(BatteriesModel previousModel, BatteriesModel currentModel)
     {
         if(previousModel != null)
         {
-            previousModel.isShowingDidChange -= SubscribableUpdateLocalBattery;
+            previousModel.visDidChange -= SubscribableUpdateLocalBattery;
         }
 
         if(currentModel != null)
         {
             if (currentModel.isFreshModel)
             {
-                currentModel.isShowing = localBattery.isVisible;
+                currentModel.vis = localBattery.isVisible;
             }
-            currentModel.isShowingDidChange += SubscribableUpdateLocalBattery;
+            currentModel.visDidChange += SubscribableUpdateLocalBattery;
             UpdateLocalBattery();
         }
     }
 
-    public void SendOutNewVisibility()
+    public void SendOutVisibility()
     {
-        model.isShowing = localBattery.isVisible;
+       model.vis = localBattery.isVisible;
+ 
     }
 
 }

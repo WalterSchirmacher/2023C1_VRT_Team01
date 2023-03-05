@@ -40,4 +40,9 @@ public class PowerReceiverSync : RealtimeComponent<PowerReceiverModel>
             UpdateLocalReceiver();
         }
     }
+
+    public void SendOutNewCount()
+    {
+        model.powerCount = localReceiver.ionPower;
+    }
 }

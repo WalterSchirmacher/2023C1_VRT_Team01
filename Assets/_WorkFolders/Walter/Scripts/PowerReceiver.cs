@@ -16,6 +16,7 @@ public class PowerReceiver : MonoBehaviour
     public AudioSource powerIncreaseSound;
     public string batteryTag = "Battery";
     private bool musicOn = false;
+    PowerReceiverSync sync;
 
     public void Start()
     {
@@ -46,6 +47,7 @@ public class PowerReceiver : MonoBehaviour
         {
             // Increase ionPower variable by 1
             ionPower++;
+            sync.SendOutNewCount();
         }
 
         UpdatePowerReceiver();
