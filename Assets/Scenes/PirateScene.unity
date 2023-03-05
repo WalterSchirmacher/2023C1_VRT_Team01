@@ -15933,6 +15933,7 @@ GameObject:
   - component: {fileID: 535789179}
   - component: {fileID: 535789178}
   - component: {fileID: 535789180}
+  - component: {fileID: 535789181}
   m_Layer: 0
   m_Name: Battery (3)
   m_TagString: Battery
@@ -16179,6 +16180,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &535789181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535789173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!1 &539800924
 GameObject:
   m_ObjectHideFlags: 0
@@ -19164,6 +19178,7 @@ GameObject:
   - component: {fileID: 729996463}
   - component: {fileID: 729996462}
   - component: {fileID: 729996464}
+  - component: {fileID: 729996465}
   m_Layer: 0
   m_Name: Battery (5)
   m_TagString: Battery
@@ -19410,6 +19425,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &729996465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729996457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!1 &730845616
 GameObject:
   m_ObjectHideFlags: 0
@@ -45480,6 +45508,7 @@ GameObject:
   - component: {fileID: 1610292521}
   - component: {fileID: 1610292520}
   - component: {fileID: 1610292522}
+  - component: {fileID: 1610292523}
   m_Layer: 0
   m_Name: Battery (2)
   m_TagString: Battery
@@ -45726,6 +45755,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1610292523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610292515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!1 &1621352998
 GameObject:
   m_ObjectHideFlags: 0
@@ -51739,6 +51781,7 @@ GameObject:
   - component: {fileID: 1721569040}
   - component: {fileID: 1721569039}
   - component: {fileID: 1721569041}
+  - component: {fileID: 1721569042}
   m_Layer: 0
   m_Name: Battery (1)
   m_TagString: Battery
@@ -51985,6 +52028,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1721569042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721569034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!1 &1728057656
 GameObject:
   m_ObjectHideFlags: 0
@@ -54790,6 +54846,8 @@ GameObject:
   - component: {fileID: 1949832203}
   - component: {fileID: 1949832202}
   - component: {fileID: 1949832201}
+  - component: {fileID: 1949832206}
+  - component: {fileID: 1949832205}
   m_Layer: 0
   m_Name: BatteryTarget
   m_TagString: Untagged
@@ -54827,6 +54885,7 @@ MonoBehaviour:
   lightSource: {fileID: 772075433}
   cannon: {fileID: 663539775}
   pushButton: {fileID: 1643353675}
+  ionPower: 0
   ionPowerPercent:
   - 0%
   - 33%
@@ -54898,6 +54957,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949832199}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1949832205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949832199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -363599832, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1818406743}
+  _sceneViewUUID: 
+  _viewUUID: 6e736f24-0735-48ff-a20e-aff0123cd0b2
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _sceneViewDestroyWhenOwnerOrLastClientLeavesMigrated: 1
+  _sceneViewDestroyWhenLastClientLeaves: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 1949832206}
+  _childViews: []
+--- !u!114 &1949832206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949832199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc2ff8a30be45e499181ce83af129f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1984577225
 GameObject:
   m_ObjectHideFlags: 0
@@ -56584,6 +56678,7 @@ GameObject:
   - component: {fileID: 2107813413}
   - component: {fileID: 2107813412}
   - component: {fileID: 2107813414}
+  - component: {fileID: 2107813415}
   m_Layer: 0
   m_Name: Battery (4)
   m_TagString: Battery
@@ -56830,6 +56925,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2107813415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107813407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!1 &2110799918
 GameObject:
   m_ObjectHideFlags: 0
@@ -64504,6 +64612,7 @@ GameObject:
   - component: {fileID: 2818428573143566261}
   - component: {fileID: 2818428573143566260}
   - component: {fileID: 2818428573143566262}
+  - component: {fileID: 2818428573143566263}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Battery
@@ -64733,6 +64842,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b32fd3a540da994eb8e4f6af424e342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2818428573143566263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818428573143566256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isVisible: 0
 --- !u!4 &2905481975080825084
 Transform:
   m_ObjectHideFlags: 0

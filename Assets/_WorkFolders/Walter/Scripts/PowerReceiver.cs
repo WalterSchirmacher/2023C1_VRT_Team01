@@ -27,7 +27,7 @@ public class PowerReceiver : MonoBehaviour
         {
             Debug.Log("Push Button Not Defined!");
         }
-        ChangeText();
+        UpdateText();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,15 +46,10 @@ public class PowerReceiver : MonoBehaviour
         {
             // Increase ionPower variable by 1
             ionPower++;
-            ChangeText();
-            ChangeSoundFx();
-            ChangeLightLevel();
         }
 
-        if (ionPower == 3)
-        {
-            cannon.StartUpCannon();
-        }
+        UpdatePowerReceiver();
+
     }
 
     public void HideBattery(GameObject gameObj)
@@ -62,8 +57,20 @@ public class PowerReceiver : MonoBehaviour
         Batteries battery = gameObj.GetComponent<Batteries>();
         battery.UpdateVisVar(false);
     }
+    public void UpdatePowerReceiver()
+    {
 
-    private void ChangeLightLevel()
+        if (ionPower == 3 && !cannon.isPoweredUp)
+        {
+            cannon.StartUpCannon();
+        }
+        UpdateText();
+        UpdateSoundFx();
+        UpdateLightLevel();
+    }
+
+
+    private void UpdateLightLevel()
     {
         float perNum = float.Parse(ionPowerPercent[ionPower].Replace("%", ""));
         int perINum = (int)perNum;
@@ -78,13 +85,13 @@ public class PowerReceiver : MonoBehaviour
         }
     }
 
-    private void ChangeText()
+    private void UpdateText()
     {
       //  Debug.Log("Changing text");
         TextMeshObj.SetText(defaultText + ionPowerPercent[ionPower]);
     }
 
-    private void ChangeSoundFx()
+    private void UpdateSoundFx()
     {
         if (ionPower > 0 && !musicOn)
         {

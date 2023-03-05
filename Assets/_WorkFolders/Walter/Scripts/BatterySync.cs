@@ -18,7 +18,7 @@ public class BatterySync : RealtimeComponent<BatterySyncModel> {
         localBattery.ChangeVisibility();
     }
 
-    void SubscribableUpdateLocalBattery(BatterySyncModel movel, bool passedIsShowing)
+    void SubscribableUpdateLocalBattery(BatterySyncModel model, bool passedIsShowing)
     {
         UpdateLocalBattery();
     }
