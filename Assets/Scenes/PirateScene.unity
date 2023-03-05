@@ -2124,6 +2124,35 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 100.00002
       objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 83817776}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RequestOwnership
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
+        Normcore
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4517433872855314186, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_Camera
       value: 
@@ -16531,7 +16560,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.631, y: 2.356, z: -10}
+  m_ConnectedAnchor: {x: 4.826, y: 2.356, z: -9.805}
   m_UseSpring: 1
   m_Spring:
     spring: 10
