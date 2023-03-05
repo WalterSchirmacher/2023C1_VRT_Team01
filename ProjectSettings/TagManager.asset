@@ -9,6 +9,7 @@ TagManager:
   - Food Pellet
   - CannonTarget
   - EnemyShip
+  - Island
   layers:
   - Default
   - TransparentFX
