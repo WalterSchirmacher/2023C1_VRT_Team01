@@ -21,14 +21,17 @@ public class IslandCollisionHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        collided = true;
-        Debug.Log("YOU RAN AGROUND!!");
+        if (other.gameObject.CompareTag("Island"))
+        {
+            collided = true;
+        }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        collided = true;
-        Debug.Log("YOU RAN AGROUND!!");
-        Debug.Log(collision.gameObject.name);
+        if (other.gameObject.CompareTag("Island"))
+        {
+            collided = false;
+        }
     }
 }
