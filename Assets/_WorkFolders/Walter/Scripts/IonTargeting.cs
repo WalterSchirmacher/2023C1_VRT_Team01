@@ -19,8 +19,10 @@ public class IonTargeting : MonoBehaviour
     [Range(5,15)]
     public int stopMoveHigh = 5;
     private float minValue, maxValue;
-    private Vector3 targetStart;
+    private Vector3 currentPos;
     public Vector3 targetPos;
+    public string isPosNeg;
+
     [HideInInspector]
     public bool backHit = false, forwardHit = false, leftHit = false, rightHit = false;
 
@@ -31,6 +33,11 @@ public class IonTargeting : MonoBehaviour
     private GameObject fireButton;
     public IonTargetingNewSync sync;
 
+    private void Awake()
+    {
+        sync = GetComponent<IonTargetingNewSync>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +46,7 @@ public class IonTargeting : MonoBehaviour
         fireButton = powerReceiver.pushButton;
         minValue = hinge.limits.min;
         maxValue = hinge.limits.max;
-        targetStart = transform.position;
+        currentPos = transform.position;
         stopLow = (float)stopMoveLow;
         stopHigh = (float)stopMoveHigh;
         xLimit = backBlock.transform.position.x;
@@ -65,6 +72,7 @@ public class IonTargeting : MonoBehaviour
         moveObj = true;
         UpdateMoveObj();
         sync.SendOutNewUpdate();
+        Debug.Log("canon target " + targetObject.transform.position);
     }
 
     public void StopMoving()
@@ -98,7 +106,14 @@ public class IonTargeting : MonoBehaviour
     {
         if(moveObj)
         {
-            targetObject.transform.position = targetPos;
+            if(isPosNeg == "+")
+            {
+                targetObject.transform.position += targetPos;
+            } else
+            {
+                targetObject.transform.position -= targetPos;
+            }
+            
             if (playErr)
             {
                 playErr = false;
@@ -124,14 +139,15 @@ public class IonTargeting : MonoBehaviour
 
                 // Move Back towards Main Pirate Ship
                 // Check if not moving back over the limit, otherwise reverse it slightly to keep it out of the buffer.
+                targetPos = Vector3.right * Time.deltaTime;
                 if (targetObject.transform.position.x < xLimit)
                 {
-                    targetPos = targetObject.transform.position + Vector3.right * Time.deltaTime;
+                    isPosNeg = "+";
                     playErr = false; 
                 }
                 else
                 {
-                    targetPos = targetObject.transform.position - Vector3.right * Time.deltaTime;
+                    isPosNeg = "-";
                     playErr = true;
                 }
                 UpdateTargetPos();
@@ -141,14 +157,15 @@ public class IonTargeting : MonoBehaviour
             else if (posNeg == -1)
             {
                 // Move Forward towards Enemy Pirate Ship
+                targetPos = Vector3.left * Time.deltaTime;
                 if (targetObject.transform.position.x > xMax)
                 {
-                    targetPos = targetObject.transform.position + Vector3.left * Time.deltaTime;
+                    isPosNeg = "+";
                     playErr = false;
                 }
                 else
                 {
-                    targetPos = targetObject.transform.position -= Vector3.left * Time.deltaTime;
+                    isPosNeg = "-";
                     playErr = true;
                 }
                 UpdateTargetPos();
@@ -173,14 +190,15 @@ public class IonTargeting : MonoBehaviour
             if (posNeg == 1)
             {
                 //Moving target right
+                targetPos = Vector3.forward * Time.deltaTime;
                 if (targetObject.transform.position.z < zMax)
                 {
-                    targetPos = targetObject.transform.position + Vector3.forward * Time.deltaTime;
+                    isPosNeg = "+";
                     playErr = false;
                 }
                 else
                 {
-                    targetPos = targetObject.transform.position - Vector3.forward * Time.deltaTime;
+                    isPosNeg = "-";
                     playErr = true;
                 }
                 UpdateTargetPos();
@@ -189,14 +207,15 @@ public class IonTargeting : MonoBehaviour
             else if (posNeg == -1)
             {
                 // Moving target left
+                targetPos = Vector3.back * Time.deltaTime;
                 if (targetObject.transform.position.z > zLimit)
                 {
-                    targetPos = targetObject.transform.position + Vector3.back * Time.deltaTime;
+                    isPosNeg = "+";
                     playErr = false;
                 }
                 else
                 {
-                    targetPos = targetObject.transform.position - Vector3.back * Time.deltaTime;
+                    isPosNeg = "-";
                     playErr = true;
                 }
                 UpdateTargetPos();

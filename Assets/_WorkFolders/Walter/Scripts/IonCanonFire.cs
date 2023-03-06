@@ -62,6 +62,13 @@ public class IonCanonFire : MonoBehaviour
         CannonTransparent.SetActive(true);
     }
 
+    [ContextMenu("TestCannon")]
+    public void TestCannonnn()
+    {
+        StartUpCannon();
+    }
+
+  
     public void StartUpCannon()
     {
         isPoweredUp = true;

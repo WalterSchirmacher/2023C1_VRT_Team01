@@ -29,6 +29,8 @@ public class PowerReceiver : MonoBehaviour
             Debug.Log("Push Button Not Defined!");
         }
         UpdateText();
+
+        sync = GetComponent<PowerReceiverSync>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,6 +43,7 @@ public class PowerReceiver : MonoBehaviour
         }
     }
 
+    [ContextMenu("DoPower")]
     public void IncreaseIonPowerNum()
     {
         if (ionPower < 3)
@@ -56,11 +59,13 @@ public class PowerReceiver : MonoBehaviour
 
     public void HideBattery(GameObject gameObj)
     {
-        Batteries battery = gameObj.GetComponent<Batteries>();
-        battery.GoHome();
+       Batteries battery = gameObj.GetComponent<Batteries>();
+
+        Destroy(gameObj);
     }
     public void UpdatePowerReceiver()
     {
+        Debug.Log("cannon status" + cannon.isPoweredUp);
 
         if (ionPower == 3 && !cannon.isPoweredUp)
         {

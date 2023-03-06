@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1888828, g: 0.1888828, b: 0.18770397, a: 1}
+  m_IndirectSpecularColor: {r: 0.18886566, g: 0.18886566, b: 0.18768314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14984,6 +14984,7 @@ MonoBehaviour:
   stopMoveLow: -5
   stopMoveHigh: 5
   targetPos: {x: 0, y: 0, z: 0}
+  isPosNeg: 
   backHit: 0
   forwardHit: 0
   leftHit: 0
@@ -15006,7 +15007,7 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.245, y: 2.9889, z: -7.042}
   m_UseSpring: 1
   m_Spring:
-    spring: 5
+    spring: 0
     damper: 50
     targetPosition: 0
   m_UseMotor: 0
@@ -15153,18 +15154,18 @@ MonoBehaviour:
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
   m_VelocityDamping: 1
-  m_VelocityScale: 0.1
+  m_VelocityScale: 0.2
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -15184,7 +15185,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
@@ -16187,7 +16188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 1868940127}
 --- !u!1 &539800924
 GameObject:
@@ -16473,8 +16474,8 @@ Transform:
   m_LocalPosition: {x: -4.147, y: 3.5, z: -6.847}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1643289768}
-  m_RootOrder: 13
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554648246
 GameObject:
@@ -18831,7 +18832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &693602137
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18905,8 +18906,8 @@ Transform:
   m_LocalPosition: {x: -27.44, y: 3.5, z: -0.14}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1643289768}
-  m_RootOrder: 14
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &695268913
 PrefabInstance:
@@ -19656,7 +19657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 215498502}
 --- !u!1 &730845616
 GameObject:
@@ -19882,7 +19883,7 @@ Transform:
   - {fileID: 12799280}
   - {fileID: 83817771}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746803480
 GameObject:
@@ -44255,7 +44256,7 @@ RectTransform:
   m_Children:
   - {fileID: 1926945665}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -45172,7 +45173,7 @@ Transform:
   m_Children:
   - {fileID: 791199194}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: -0.156, y: 0, z: 0}
 --- !u!59 &1549066923
 HingeJoint:
@@ -45678,7 +45679,7 @@ Transform:
   - {fileID: 595218496}
   - {fileID: 1828969307}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1601410153
 GameObject:
@@ -46297,7 +46298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 1709191489}
 --- !u!1 &1621352998
 GameObject:
@@ -46853,8 +46854,6 @@ Transform:
   - {fileID: 509081480}
   - {fileID: 1760717290}
   - {fileID: 125737517}
-  - {fileID: 546136500}
-  - {fileID: 693602140}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47506,7 +47505,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1709191489
 GameObject:
@@ -48028,7 +48027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 1098113367}
 --- !u!1 &1728057656
 GameObject:
@@ -48065,7 +48064,7 @@ Transform:
   - {fileID: 801016765}
   - {fileID: 478053128}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1729922068
 GameObject:
@@ -48481,6 +48480,7 @@ MonoBehaviour:
   stopMoveLow: -5
   stopMoveHigh: 5
   targetPos: {x: 0, y: 0, z: 0}
+  isPosNeg: 
   backHit: 0
   forwardHit: 0
   leftHit: 0
@@ -48503,8 +48503,8 @@ HingeJoint:
   m_ConnectedAnchor: {x: 0.245, y: 2.987, z: -6.771}
   m_UseSpring: 1
   m_Spring:
-    spring: 5
-    damper: 10
+    spring: 0
+    damper: 50
     targetPosition: 0
   m_UseMotor: 0
   m_Motor:
@@ -48650,18 +48650,18 @@ MonoBehaviour:
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
   m_VelocityDamping: 1
-  m_VelocityScale: 0.1
+  m_VelocityScale: 0.2
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
   m_SmoothRotation: 0
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
-  m_ThrowOnDetach: 1
+  m_ThrowOnDetach: 0
   m_ThrowSmoothingDuration: 0.25
   m_ThrowSmoothingCurve:
     serializedVersion: 2
@@ -48681,7 +48681,7 @@ MonoBehaviour:
   m_ThrowVelocityScale: 1.5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
+  m_RetainTransformParent: 0
   m_AttachPointCompatibilityMode: 0
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
@@ -57591,7 +57591,7 @@ Transform:
   - {fileID: 1171240350}
   - {fileID: 515561742}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2107813407
 GameObject:
@@ -57907,7 +57907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 1556817829}
 --- !u!1 &2110799918
 GameObject:
@@ -66568,7 +66568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd076a5c39b9a5a4ca2c3580c56cbd23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isVisible: 1
+  toBeDestroyed: 0
   homeBase: {fileID: 1530369411}
 --- !u!4 &2905481975080825084
 Transform:
@@ -69793,7 +69793,7 @@ Transform:
   - {fileID: 4221001869512174949}
   - {fileID: 1359604645}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 84.637, z: 0}
 --- !u!1 &4761586138778991453
 GameObject:

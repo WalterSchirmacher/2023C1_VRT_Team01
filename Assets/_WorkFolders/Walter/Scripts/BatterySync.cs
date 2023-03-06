@@ -14,8 +14,8 @@ public class BatterySync : RealtimeComponent<BatteriesModel> {
 
     void UpdateLocalBattery()
     {
-        localBattery.isVisible = model.vis;
-        localBattery.ChangeVisibility();
+        localBattery.toBeDestroyed = model.blowUp;
+        localBattery.BlowUpObj();
     }
 
     void SubscribableUpdateLocalBattery(BatteriesModel model, bool passedIsShowing)
@@ -27,23 +27,23 @@ public class BatterySync : RealtimeComponent<BatteriesModel> {
     {
         if(previousModel != null)
         {
-            previousModel.visDidChange -= SubscribableUpdateLocalBattery;
+            previousModel.blowUpDidChange -= SubscribableUpdateLocalBattery;
         }
 
         if(currentModel != null)
         {
             if (currentModel.isFreshModel)
             {
-                currentModel.vis = localBattery.isVisible;
+                currentModel.blowUp = localBattery.toBeDestroyed;
             }
-            currentModel.visDidChange += SubscribableUpdateLocalBattery;
+            currentModel.blowUpDidChange += SubscribableUpdateLocalBattery;
             UpdateLocalBattery();
         }
     }
 
     public void SendOutVisibility()
     {
-       model.vis = localBattery.isVisible;
+       model.blowUp = localBattery.toBeDestroyed;
  
     }
 
