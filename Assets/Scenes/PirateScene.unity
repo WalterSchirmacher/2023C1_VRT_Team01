@@ -2148,12 +2148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RequestOwnership
+      value: SendOutNewValue
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Normal.Realtime.RealtimeComponent`1[[Normal.Realtime.RealtimeTransformModel,
-        Normcore
+      value: ScrollViewSync, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4517433872382773331, guid: 765cd622a684c5c4f9c73f939eabea66, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2368,15 +2367,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 83817775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1029778088, guid: c424820a8880b8845bda10ec0b41507e, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c08b6390db0fbf40a3ebe0f56f63142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolate: 1
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _syncVelocity: 1
-  _maintainOwnershipWhileSleeping: 0
 --- !u!114 &83817777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,6 +2391,8 @@ MonoBehaviour:
   _sceneViewDestroyWhenLastClientLeaves: 1
   _components:
   - componentID: 1
+    component: {fileID: 0}
+  - componentID: 2
     component: {fileID: 83817776}
   _childViews: []
 --- !u!1 &84237367
