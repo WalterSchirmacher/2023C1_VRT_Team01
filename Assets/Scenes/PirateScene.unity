@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18887106, g: 0.18887106, b: 0.18768096, a: 1}
+  m_IndirectSpecularColor: {r: 0.18887448, g: 0.18887448, b: 0.1876885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14515,7 +14515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &495140160
 Transform:
   m_ObjectHideFlags: 0
@@ -14953,7 +14953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &509081476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18476,7 +18476,7 @@ MonoBehaviour:
   forwardBackCTRL: {fileID: 1760717286}
   leftRightCTRLOff: {fileID: 1348328357}
   forwardBackCTRLOff: {fileID: 495140159}
-  isPoweredUp: 0
+  isPoweredUp: 1
 --- !u!4 &663539776
 Transform:
   m_ObjectHideFlags: 0
@@ -18827,7 +18827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &693602137
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42555,7 +42555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1348328358
 Transform:
   m_ObjectHideFlags: 0
@@ -46883,7 +46883,7 @@ MonoBehaviour:
   targetObject: {fileID: 546136496}
   theEnemy: {fileID: 857838915}
   showIonLaserTime: 2
-  isFired: 0
+  isFired: 1
   previousFire: 0
 --- !u!114 &1643353677
 MonoBehaviour:
@@ -47368,7 +47368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1702707030
 Transform:
   m_ObjectHideFlags: 0
@@ -48458,7 +48458,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1760717286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51401,7 +51401,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013402044}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
