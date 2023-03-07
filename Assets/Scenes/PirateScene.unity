@@ -3005,7 +3005,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 18
   m_Center: {x: 3.12, y: 2.39, z: 3.81}
 --- !u!1 &117314223
 GameObject:
@@ -8640,7 +8640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191397122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.21, y: 1.11, z: -0}
+  m_LocalPosition: {x: -10.95, y: 1.11, z: 20.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1017055636}
@@ -8687,7 +8687,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 3.75, z: 14}
+  m_Size: {x: 15, y: 3.75, z: 14}
   m_Center: {x: 9.11698, y: 0.6738906, z: -1.5853829}
 --- !u!1001 &199141451
 PrefabInstance:
@@ -18565,7 +18565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678649441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: 1.11, z: 0}
+  m_LocalPosition: {x: -9.83, y: 1.11, z: -7.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 369417213}
@@ -18583,8 +18583,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 3.75, z: 14}
-  m_Center: {x: 9.11698, y: 0.6738906, z: -1.5853829}
+  m_Size: {x: 15, y: 3.75, z: 14}
+  m_Center: {x: 8.238743, y: 0.6738906, z: -1.5853825}
 --- !u!114 &678649444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49297,7 +49297,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 18
   m_Center: {x: 0, y: 2.1, z: 0}
 --- !u!114 &1818406743 stripped
 MonoBehaviour:
@@ -51044,7 +51044,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 26
+  m_Radius: 24
   m_Center: {x: 0, y: 4.93, z: 0}
 --- !u!1001 &1996574257
 PrefabInstance:
