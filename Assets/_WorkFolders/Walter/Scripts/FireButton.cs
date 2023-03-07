@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FireButton : MonoBehaviour
@@ -24,49 +23,29 @@ public class FireButton : MonoBehaviour
     void Start()
     {
         laserTransformer = laserColliderParent.transform;
-    }
-    private void Update()
-    {
-      //  if(isFired && previousFire)
-      //  {
-     //       FireCannon();
-      //  }
+        laserColliderParent.SetActive(true);
+        laserCollider.SetActive(false);
     }
 
     public void FireIon()
     {
-      isFired = true;
-    //    previousFire = true;
-     //   UpdateIon();
+        isFired = true;
+        //    previousFire = true;
+        //   UpdateIon();
         sync.SendOutFireBtnStatus();
     }
 
     public void UpdateIon()
     {
-        if(isFired)
+        if (isFired)
         {
             FireCannon();
         }
     }
 
-    [ContextMenu("Fire Cannon")]
-    public void FireCannon()
+    public void CheckForHit()
     {
-        isFired = true;
-        sync.SendOutFireBtnStatus();
-        MeshRenderer mesh = laserCollider.GetComponent<MeshRenderer>();
-        mesh.enabled = true;
-        laserColliderParent.SetActive(true);
-        laserCollider.SetActive(true);
-        laserColliderParent.transform.LookAt(targetObject.transform);
-
-        Vector3 vec = laserColliderParent.transform.position - targetObject.transform.position;
-        float vecMag = vec.magnitude;
-        laserCollider.transform.localPosition = new Vector3(laserCollider.transform.localPosition.x, laserCollider.transform.localPosition.y, vecMag/2);
-        laserCollider.transform.localScale = new Vector3(vecMag, laserCollider.transform.localScale.y, laserCollider.transform.localScale.z);
-        StartCoroutine(HideLaserCollider());
-
-        if(theEnemy.isHit)
+        if (theEnemy.isHit)
         {
             Debug.Log("Hit the Enemy");
             theEnemy.SetFire(true);
@@ -75,8 +54,28 @@ public class FireButton : MonoBehaviour
         else
         {
             Debug.Log("Missed!");
-
         }
+        targetObject.GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    [ContextMenu("Fire Cannon")]
+    public void FireCannon()
+    {
+        isFired = true;
+        sync.SendOutFireBtnStatus();
+      //  MeshRenderer mesh = laserCollider.GetComponent<MeshRenderer>();
+      //  mesh.enabled = true;
+    //    Debug.Log("laser is at " + laserColliderParent.transform.rotation);
+
+        laserColliderParent.transform.LookAt(targetObject.transform);
+        laserCollider.SetActive(true);
+  //      Debug.Log("laser is now at " + laserColliderParent.transform.rotation);
+        //   Vector3 vec = laserColliderParent.transform.position - targetObject.transform.position;
+        //    float vecMag = vec.magnitude;
+        //   laserCollider.transform.localPosition = new Vector3(laserCollider.transform.localPosition.x, laserCollider.transform.localPosition.y, vecMag/2);
+        //    laserCollider.transform.localScale = new Vector3(vecMag, laserCollider.transform.localScale.y, laserCollider.transform.localScale.z);
+        StartCoroutine(HideLaserCollider());
+
 
     }
     IEnumerator HideLaserCollider()
@@ -84,7 +83,8 @@ public class FireButton : MonoBehaviour
         yield return new WaitForSeconds(showIonLaserTime);
         laserCollider.SetActive(false);
         isFired = false;
-      //  previousFire = false;
+        targetObject.GetComponent<MeshRenderer>().enabled = true;
+        //  previousFire = false;
         sync.SendOutFireBtnStatus();
     }
 }
