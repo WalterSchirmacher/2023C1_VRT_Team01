@@ -14,15 +14,15 @@ public class EnemyShip : MonoBehaviour
         sync = GetComponent<EnemyShipSync>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collider) 
     {
-        if(collision.gameObject.CompareTag("CannonTarget") && !isHit)
+        if(collider.gameObject.CompareTag("CannonTarget") && !isHit)
         {
             isHit = true;
             sync.SendOutHitFireInfo();
         }
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider collider)
     {
         isHit = false;
         sync.SendOutHitFireInfo();

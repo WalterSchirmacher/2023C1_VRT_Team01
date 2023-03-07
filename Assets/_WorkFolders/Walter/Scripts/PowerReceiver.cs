@@ -60,7 +60,8 @@ public class PowerReceiver : MonoBehaviour
     public void HideBattery(GameObject gameObj)
     {
        Batteries battery = gameObj.GetComponent<Batteries>();
-
+        battery.toBeDestroyed = true;
+        battery.GetComponent<BatterySync>().SendOutVisibility();
         Destroy(gameObj);
     }
     public void UpdatePowerReceiver()
