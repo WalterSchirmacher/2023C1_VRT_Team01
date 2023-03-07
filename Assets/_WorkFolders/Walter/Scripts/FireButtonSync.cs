@@ -16,7 +16,11 @@ public class FireButtonSync : RealtimeComponent<FireButtonModel>
     void UpdateLocalFireButton()
     {
         localFireButton.isFired = model.fireButton;
-        localFireButton.UpdateIon();
+        if(model.fireButton)
+        {
+            localFireButton.FireCannon();
+        }
+     //   localFireButton.UpdateIon();
     }
 
     void SubscribableUpdateLocalFireButton(FireButtonModel model, bool passedIsFired)

@@ -10,6 +10,7 @@ public class FireButton : MonoBehaviour
     public float showIonLaserTime = 1f;
     private Transform laserTransformer;
     public bool isFired = false;
+    public bool previousFire = false;
     FireButtonSync sync;
 
     private void Awake()
@@ -24,11 +25,19 @@ public class FireButton : MonoBehaviour
     {
         laserTransformer = laserColliderParent.transform;
     }
-
-    public void FireIon(bool bol)
+    private void Update()
     {
-        isFired = bol;
-        UpdateIon();
+      //  if(isFired && previousFire)
+      //  {
+     //       FireCannon();
+      //  }
+    }
+
+    public void FireIon()
+    {
+      isFired = true;
+    //    previousFire = true;
+     //   UpdateIon();
         sync.SendOutFireBtnStatus();
     }
 
@@ -43,6 +52,8 @@ public class FireButton : MonoBehaviour
     [ContextMenu("Fire Cannon")]
     public void FireCannon()
     {
+        isFired = true;
+        sync.SendOutFireBtnStatus();
         MeshRenderer mesh = laserCollider.GetComponent<MeshRenderer>();
         mesh.enabled = true;
         laserColliderParent.SetActive(true);
@@ -73,6 +84,7 @@ public class FireButton : MonoBehaviour
         yield return new WaitForSeconds(showIonLaserTime);
         laserCollider.SetActive(false);
         isFired = false;
+      //  previousFire = false;
         sync.SendOutFireBtnStatus();
     }
 }
