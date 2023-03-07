@@ -11,6 +11,7 @@ public class FireButton : MonoBehaviour
     public bool isFired = false;
     public bool previousFire = false;
     FireButtonSync sync;
+    public GameObject fireParticleSys;
 
     private void Awake()
     {
@@ -81,10 +82,12 @@ public class FireButton : MonoBehaviour
     IEnumerator HideLaserCollider()
     {
         yield return new WaitForSeconds(showIonLaserTime);
+        theEnemy.SetFire(true);
+        yield return new WaitForSeconds(0.5f);
+        fireParticleSys.SetActive(true);
         laserCollider.SetActive(false);
         isFired = false;
         targetObject.GetComponent<MeshRenderer>().enabled = true;
-        //  previousFire = false;
         sync.SendOutFireBtnStatus();
     }
 }

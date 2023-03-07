@@ -46466,7 +46466,7 @@ MonoBehaviour:
   cannonPoint: {fileID: 639778251}
   targetObject: {fileID: 546136496}
   theEnemy: {fileID: 857838915}
-  showIonLaserTime: 3
+  showIonLaserTime: 5
   isFired: 0
   previousFire: 0
 --- !u!114 &1643353677

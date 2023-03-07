@@ -13,7 +13,7 @@ public class IonParticles : MonoBehaviour
     {
         if (other.CompareTag("CannonTarget"))
         {
-            fireButton.CheckForHit();
+          //  fireButton.CheckForHit();
         }
         else
         {
